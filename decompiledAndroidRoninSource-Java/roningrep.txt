@@ -1,0 +1,990 @@
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:3:import com.dji.api.RoninBuyMonitorHttpApi;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:4:import com.dji.webviewui.DJIRoninBaseWebViewActivity;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:6:public class DJIRoninBuyMonitorActivity
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:7:  extends DJIRoninBaseWebViewActivity<BuyMonitorViewModel>
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:9:  private static final String TAG = "DJIRoninBuyMonitorActivity";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:13:    return RoninBuyMonitorHttpApi.getBuyMonitorUrl();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/buymonitor/DJIRoninBuyMonitorActivity.java:18:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\dji\webviewui\buymonitor\DJIRoninBuyMonitorActivity.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/cable/ShutterCableCapabilityActivity.java:3:import com.dji.webviewui.DJIRoninBaseWebViewActivity;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/cable/ShutterCableCapabilityActivity.java:6:  extends DJIRoninBaseWebViewActivity<CableCapabilityViewModel>
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:16:public abstract class DJIRoninBaseWebViewActivity<T extends ViewModel>
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:19:  private static final String APP_UA_PREFIX = "DJI-app-ronin-android-";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:20:  private static final String TAG = "DJIRoninBaseWebViewActivity";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:89:      if (DJIRoninBaseWebViewActivity.this.mProgressBar != null)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:91:        DJIRoninBaseWebViewActivity.this.mProgressBar.setProgress(paramInt);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:92:        if (DJIRoninBaseWebViewActivity.this.mProgressBar.getProgress() != DJIRoninBaseWebViewActivity.this.mProgressBar.getMax())
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:94:          DJIRoninBaseWebViewActivity.this.mProgressBar.setVisibility(0);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:97:        DJIRoninBaseWebViewActivity.this.mProgressBar.setVisibility(8);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:110:      DJIRoninBaseWebViewActivity.this.mPageErrorLy.setVisibility(0);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/DJIRoninBaseWebViewActivity.java:121:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\dji\webviewui\DJIRoninBaseWebViewActivity.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/push/DJIPushWebViewActivity.java:4:import com.dji.webviewui.DJIRoninBaseWebViewActivity;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/push/DJIPushWebViewActivity.java:7:  extends DJIRoninBaseWebViewActivity<PushWebViewModel>
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2136:    public static final int ronin2_gimbal_param_infos = 2131689520;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2429:    public static final int ronin2_config_default = 2131756536;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2430:    public static final int ronin2_config_user_1 = 2131756537;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2431:    public static final int ronin2_config_user_2 = 2131756538;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2432:    public static final int ronin2_config_user_3 = 2131756539;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/dji/webviewui/R.java:2433:    public static final int ronin2_config_user_4 = 2131756540;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/BuildConfig.java:1:package com.ronin.connect;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/BuildConfig.java:6:  public static final String APPLICATION_ID = "com.ronin.connect";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/BuildConfig.java:10:  public static final String LIBRARY_PACKAGE_NAME = "com.ronin.connect";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/BuildConfig.java:16:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\BuildConfig.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:1:package com.ronin.connect;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:2260:    public static final int ic_monitor_connect_ronin_tip = 2131231186;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:2271:    public static final int ic_ronin_navi_back = 2131231277;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:2272:    public static final int ic_ronin_page_minus = 2131231285;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:2273:    public static final int ic_ronin_page_plus = 2131231286;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3020:    public static final int ronin2_gimbal_param_infos = 2131689520;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3343:    public static final int hg710_image_monitor_use_ronin_to_connect_monitor_popup_info = 2131756117;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3375:    public static final int ronin2_config_default = 2131756536;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3376:    public static final int ronin2_config_user_1 = 2131756537;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3377:    public static final int ronin2_config_user_2 = 2131756538;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3378:    public static final int ronin2_config_user_3 = 2131756539;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3379:    public static final int ronin2_config_user_4 = 2131756540;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3380:    public static final int ronin_image_monitor_conenect_monitor_enter_password_popup = 2131756561;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3381:    public static final int ronin_image_monitor_general_monitor_band_switch_fail_popup_phone_no_5g = 2131756562;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3382:    public static final int ronin_image_monitor_general_setting_about_monitor_firmware_version = 2131756563;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3383:    public static final int ronin_image_monitor_general_setting_accessibility = 2131756564;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3384:    public static final int ronin_image_monitor_general_setting_cache_full_popup_ignore_button = 2131756565;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3385:    public static final int ronin_image_monitor_general_setting_cache_full_popup_improve_cache_button = 2131756566;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3386:    public static final int ronin_image_monitor_general_setting_cache_full_popup_info = 2131756567;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3387:    public static final int ronin_image_monitor_general_setting_cache_full_popup_stop_record_button = 2131756568;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3388:    public static final int ronin_image_monitor_general_setting_cache_full_popup_title = 2131756569;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3389:    public static final int ronin_image_monitor_general_setting_cache_improve_toast = 2131756571;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3390:    public static final int ronin_image_monitor_general_setting_cache_popup_cover_button = 2131756573;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3391:    public static final int ronin_image_monitor_general_setting_cache_popup_improve_cache_button = 2131756574;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3392:    public static final int ronin_image_monitor_general_setting_cache_set_info = 2131756575;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3393:    public static final int ronin_image_monitor_general_setting_cache_will_full_popup = 2131756576;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3394:    public static final int ronin_image_monitor_general_setting_cache_will_full_popup_info = 2131756577;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3395:    public static final int ronin_image_monitor_general_setting_composition_image_guide = 2131756578;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3396:    public static final int ronin_image_monitor_general_setting_composition_image_guide_gold_proportion = 2131756579;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3397:    public static final int ronin_image_monitor_general_setting_composition_image_guide_none = 2131756580;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3398:    public static final int ronin_image_monitor_general_setting_default = 2131756581;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3399:    public static final int ronin_image_monitor_general_setting_focus_peaking = 2131756582;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3400:    public static final int ronin_image_monitor_general_setting_focus_peaking_threshold = 2131756583;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3401:    public static final int ronin_image_monitor_general_setting_height_reduce = 2131756584;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3402:    public static final int ronin_image_monitor_general_setting_histogram = 2131756585;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3403:    public static final int ronin_image_monitor_general_setting_image_center_sign = 2131756586;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3404:    public static final int ronin_image_monitor_general_setting_image_center_sign_center = 2131756587;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3405:    public static final int ronin_image_monitor_general_setting_image_center_sign_center_and_diagonal = 2131756588;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3406:    public static final int ronin_image_monitor_general_setting_image_center_sign_diagonal = 2131756589;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3407:    public static final int ronin_image_monitor_general_setting_image_enlarge = 2131756590;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3408:    public static final int ronin_image_monitor_general_setting_image_proportion = 2131756591;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3409:    public static final int ronin_image_monitor_general_setting_image_rotate = 2131756592;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3410:    public static final int ronin_image_monitor_general_setting_image_safe_sign = 2131756593;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3411:    public static final int ronin_image_monitor_general_setting_pseudo_color = 2131756602;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3412:    public static final int ronin_image_monitor_general_setting_shutter_feature = 2131756603;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3413:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_info = 2131756604;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3414:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_item_1g = 2131756605;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3415:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_item_2g = 2131756606;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3416:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_item_4g = 2131756607;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3417:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_item_8g = 2131756608;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3418:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_item_gigantic = 2131756609;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3419:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_max_title = 2131756610;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3420:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_cache_title = 2131756611;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3421:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_high_fps_info = 2131756612;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3422:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_high_fps_title = 2131756613;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3423:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_only_video_info = 2131756614;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3424:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_only_video_title = 2131756615;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3425:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_video_cache_info = 2131756616;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3426:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_video_cache_title = 2131756617;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3427:    public static final int ronin_image_monitor_general_setting_shutter_feature_page_video_info = 2131756618;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3428:    public static final int ronin_image_monitor_general_setting_sign_color = 2131756619;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3429:    public static final int ronin_image_monitor_general_setting_sign_line_wide = 2131756620;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3430:    public static final int ronin_image_monitor_general_setting_single_color = 2131756621;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3431:    public static final int ronin_image_monitor_general_setting_wifi_name_change_fail_illegal = 2131756622;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3432:    public static final int ronin_image_monitor_general_setting_wifi_name_change_fail_over_max = 2131756623;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3433:    public static final int ronin_image_monitor_general_setting_wifi_name_change_fail_same_name = 2131756624;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3434:    public static final int ronin_image_monitor_general_setting_wifi_name_change_fail_same_password = 2131756625;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3435:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_fail_popup_button = 2131756626;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3436:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_fail_popup_info = 2131756627;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3437:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_fail_popup_title = 2131756628;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3438:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_popup_info = 2131756629;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3439:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_popup_title = 2131756630;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3440:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_success_popup_button = 2131756631;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3441:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_success_popup_info = 2131756632;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3442:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_name_success_popup_title = 2131756633;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3443:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_password_fail_popup_title = 2131756634;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3444:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_password_popup_info = 2131756635;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3445:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_password_popup_title = 2131756636;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3446:    public static final int ronin_image_monitor_general_setting_wifi_settings_change_password_success_popup_title = 2131756637;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3447:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_band_change_success_toast = 2131756638;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3448:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_band_changing_info = 2131756639;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3449:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_band = 2131756640;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3450:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_band_2_4 = 2131756641;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3451:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_band_5_8 = 2131756642;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3452:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_band_change_reconnect_fail_popop_info = 2131756643;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3453:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_band_change_reconnect_popup = 2131756644;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3454:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel = 2131756645;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3455:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_change_reconnect_fail_popop_info = 2131756646;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3456:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_change_reconnect_popup = 2131756647;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3457:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_one = 2131756648;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3458:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_page_bad = 2131756649;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3459:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_page_current = 2131756650;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3460:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_channel_page_good = 2131756651;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3461:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_name = 2131756652;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3462:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_password = 2131756653;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3463:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_password_change = 2131756654;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3464:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_sharpness_1080p = 2131756655;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3465:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_sharpness_720p = 2131756656;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3466:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_sharpness_info = 2131756657;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3467:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_sharpness_title = 2131756658;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3468:    public static final int ronin_image_monitor_general_setting_wifi_settings_page_monitor_sn = 2131756659;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3469:    public static final int ronin_image_monitor_general_setting_wifi_settings_title = 2131756660;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3470:    public static final int ronin_image_monitor_settings_title = 2131756661;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:3866:    public static final int ronin_base_progress_bar_white = 2131821091;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:4447:    public static final int[] RoninSeekBarViewWhite = { 2130968679 };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:4448:    public static final int RoninSeekBarViewWhite_buttonOnTop = 0;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/R.java:4613:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\R.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/adapter/DJIWifiListAdapter.java:1:package com.ronin.connect.wificonnect.adapter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/adapter/DJIWifiListAdapter.java:10:import com.ronin.connect.R.id;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/adapter/DJIWifiListAdapter.java:11:import com.ronin.connect.wificonnect.bean.DJIWifiBean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/adapter/DJIWifiListAdapter.java:99:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\adapter\DJIWifiListAdapter.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/ConnectWiFiInfo.java:1:package com.ronin.connect.wificonnect.bean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/ConnectWiFiInfo.java:28:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\bean\ConnectWiFiInfo.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/DJIWifiBean.java:1:package com.ronin.connect.wificonnect.bean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/DJIWifiBean.java:76:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\bean\DJIWifiBean.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/DJIWifiCipherType.java:1:package com.ronin.connect.wificonnect.bean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/DJIWifiCipherType.java:27:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\bean\DJIWifiCipherType.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/NetworkConnectState.java:1:package com.ronin.connect.wificonnect.bean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/bean/NetworkConnectState.java:17:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\bean\NetworkConnectState.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/constant/DJIWifiConstant.java:1:package com.ronin.connect.wificonnect.constant;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/constant/DJIWifiConstant.java:13:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\constant\DJIWifiConstant.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:1:package com.ronin.connect.wificonnect.contract;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:4:import com.dji.ronin.uilib.mvp.IDJIMvpModel;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:5:import com.dji.ronin.uilib.mvp.IDJIMvpPresenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:6:import com.dji.ronin.uilib.mvp.IDJIMvpView;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:7:import com.ronin.connect.wificonnect.bean.ConnectWiFiInfo;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:8:import com.ronin.connect.wificonnect.bean.DJIWifiBean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:9:import com.ronin.connect.wificonnect.bean.DJIWifiCipherType;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/contract/DJIIWifiConnectContract.java:108:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\contract\DJIIWifiConnectContract.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/dialog/DJIWifiCannotConnectDialog.java:1:package com.ronin.connect.wificonnect.dialog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/dialog/DJIWifiCannotConnectDialog.java:87:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\dialog\DJIWifiCannotConnectDialog.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/dialog/DJIWifiLinkDialog.java:1:package com.ronin.connect.wificonnect.dialog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/dialog/DJIWifiLinkDialog.java:11:import com.ronin.connect.R.string;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/dialog/DJIWifiLinkDialog.java:132:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\dialog\DJIWifiLinkDialog.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:1:package com.ronin.connect.wificonnect;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:16:import com.dji.ronin.uilib.DJIBaseFullscreenActivity;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:17:import com.dji.ronin.uilib.dialog.CommonWhiteDialog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:18:import com.dji.ronin.uilib.dialog.FpvInputDialog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:19:import com.dji.ronin.uilib.dialog.FpvInputDialog.OnButtonClickListener;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:20:import com.ronin.connect.wificonnect.adapter.DJIWifiListAdapter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:21:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectPresenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:22:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectView;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:23:import com.ronin.connect.wificonnect.dialog.DJIWifiCannotConnectDialog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:138:  public void configWifiPwd(com.ronin.connect.wificonnect.bean.DJIWifiBean arg1)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:347:  public void updateList(java.util.List<com.ronin.connect.wificonnect.bean.DJIWifiBean> arg1)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/DJIWifiConnectActivity.java:366:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\DJIWifiConnectActivity.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/helper/WiFiRepeatTipHelper.java:1:package com.ronin.connect.wificonnect.helper;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/helper/WiFiRepeatTipHelper.java:5:import com.ronin.connect.wificonnect.bean.NetworkConnectState;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/helper/WiFiRepeatTipHelper.java:110:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\helper\WiFiRepeatTipHelper.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/helper/WiFiSpecialModelHelper.java:1:package com.ronin.connect.wificonnect.helper;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/helper/WiFiSpecialModelHelper.java:95:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\helper\WiFiSpecialModelHelper.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:1:package com.ronin.connect.wificonnect.manager;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:11:import com.ronin.connect.wificonnect.bean.ConnectWiFiInfo;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:12:import com.ronin.connect.wificonnect.bean.DJIWifiBean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:13:import com.ronin.connect.wificonnect.bean.DJIWifiCipherType;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:14:import com.ronin.connect.wificonnect.helper.WiFiRepeatTipHelper;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:15:import com.ronin.connect.wificonnect.presenter.DJIWifiConnectPresenter.NewWifiApiConnectState;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:22:  public static final String RONIN_WIFI_PREFIX = "RavenEye";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:33:  private void connectCallback(DJIWifiConnectPresenter.NewWifiApiConnectState arg1, com.ronin.connect.wificonnect.bean.NetworkConnectState arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:171:  public String getRoninConnectedWifiName()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:205:  public boolean isRoninSSID(String paramString)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/manager/DJIWifiConnectManager.java:246:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\manager\DJIWifiConnectManager.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/model/DJIWifiConnectModel.java:1:package com.ronin.connect.wificonnect.model;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/model/DJIWifiConnectModel.java:3:import com.ronin.connect.wificonnect.bean.DJIWifiBean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/model/DJIWifiConnectModel.java:4:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectModel;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/model/DJIWifiConnectModel.java:5:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectPresenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/model/DJIWifiConnectModel.java:32:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\model\DJIWifiConnectModel.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:1:package com.ronin.connect.wificonnect.presenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:8:import com.dji.ronin.uilib.mvp.DJIMvpBasePresenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:10:import com.ronin.connect.wificonnect.bean.ConnectWiFiInfo;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:11:import com.ronin.connect.wificonnect.bean.DJIWifiBean;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:12:import com.ronin.connect.wificonnect.bean.DJIWifiCipherType;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:13:import com.ronin.connect.wificonnect.bean.NetworkConnectState;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:14:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectPresenter;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:15:import com.ronin.connect.wificonnect.contract.DJIIWifiConnectContract.IWifiConnectView;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:16:import com.ronin.connect.wificonnect.manager.DJIWifiConnectManager;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/presenter/DJIWifiConnectPresenter.java:348:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\presenter\DJIWifiConnectPresenter.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/RoninConnectComponent.java:1:package com.ronin.connect.wificonnect;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/RoninConnectComponent.java:7:public class RoninConnectComponent
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/RoninConnectComponent.java:12:    return "RoninConnectComponent";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/com/ronin/connect/wificonnect/RoninConnectComponent.java:22:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\ronin\connect\wificonnect\RoninConnectComponent.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:3:public enum DJIGimbalRonin2AxisMode
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:9:    Roll360 = new DJIGimbalRonin2AxisMode("Roll360", 2, 2);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:10:    DJIGimbalRonin2AxisMode localDJIGimbalRonin2AxisMode = new DJIGimbalRonin2AxisMode("ThreeDRoll360", 3, 3);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:11:    ThreeDRoll360 = localDJIGimbalRonin2AxisMode;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:12:    $VALUES = new DJIGimbalRonin2AxisMode[] { ThreeAxis, TwoAxis, Roll360, localDJIGimbalRonin2AxisMode };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:15:  private DJIGimbalRonin2AxisMode(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2AxisMode.java:27:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\dji\common\gimbal\DJIGimbalRonin2AxisMode.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:3:public enum DJIGimbalRonin2WorkMode
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:9:    Flower = new DJIGimbalRonin2WorkMode("Flower", 1, 1);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:10:    Fpv = new DJIGimbalRonin2WorkMode("Fpv", 2, 2);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:11:    DJIGimbalRonin2WorkMode localDJIGimbalRonin2WorkMode = new DJIGimbalRonin2WorkMode("Center", 3, 3);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:12:    Center = localDJIGimbalRonin2WorkMode;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:13:    $VALUES = new DJIGimbalRonin2WorkMode[] { Free, Flower, Fpv, localDJIGimbalRonin2WorkMode };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:16:  private DJIGimbalRonin2WorkMode(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/DJIGimbalRonin2WorkMode.java:28:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\dji\common\gimbal\DJIGimbalRonin2WorkMode.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:12:import dji.midware.ronin2.Ronin2GimbalParamsManager.BaseCommand;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:21:public class Ronin2SubscribeIMPL
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:27:  private static final String TAG = "Ronin2SubscribeIMPL";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:46:  public Ronin2SubscribeIMPL()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:48:    put("UserProfile", Ronin2GimbalParamsManager.BaseCommand.USER_PROFILE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:49:    put("SilentMode", Ronin2GimbalParamsManager.BaseCommand.SILENT_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:50:    put("PitchMotorControlStiffness", Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:51:    put("YawMotorControlStiffness", Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:52:    put("RollMotorControlStiffness", Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:53:    put("PitchMotorControlStrength", Ronin2GimbalParamsManager.BaseCommand.STRENGTH_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:54:    put("YawMotorControlStrength", Ronin2GimbalParamsManager.BaseCommand.STRENGTH_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:55:    put("RollMotorControlStrength", Ronin2GimbalParamsManager.BaseCommand.STRENGTH_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:56:    put("PitchMotorControlGyroFilteringFactor", Ronin2GimbalParamsManager.BaseCommand.FILTERING_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:57:    put("YawMotorControlGyroFilteringFactor", Ronin2GimbalParamsManager.BaseCommand.FILTERING_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:58:    put("RollMotorControlGyroFilteringFactor", Ronin2GimbalParamsManager.BaseCommand.FILTERING_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:59:    put("PitchMotorControlPreControl", Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:60:    put("YawMotorControlPreControl", Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:61:    put("RollMotorControlPreControl", Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:62:    put("MotorBlockUpTime", Ronin2GimbalParamsManager.BaseCommand.MOTOR_BLOCK_UP_TIME);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:63:    put("YawFineTuning", Ronin2GimbalParamsManager.BaseCommand.YAW_FINE_TUNING);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:64:    put("MotorEnabled", Ronin2GimbalParamsManager.BaseCommand.MOTOR_SPECIAL_CMD);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:65:    put("ForbidTriggerSelfie", Ronin2GimbalParamsManager.BaseCommand.MOTOR_SPECIAL_CMD);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:66:    put("ForbidVerticalShootingSwitch", Ronin2GimbalParamsManager.BaseCommand.MOTOR_SPECIAL_CMD);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:67:    put("ForbidRoll360Switch", Ronin2GimbalParamsManager.BaseCommand.MOTOR_SPECIAL_CMD);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:68:    put("StartBalanceTest", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:69:    put("BalanceTestStatus", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:70:    put("IsTestingBalance", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:71:    put("PitchTestResult", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:72:    put("RollTestResult", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:73:    put("YawTestResult", Ronin2GimbalParamsManager.BaseCommand.BALANCE_TEST);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:74:    put("PitchFineTuning", Ronin2GimbalParamsManager.BaseCommand.PITCH_FINE_TUNING);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:75:    put("GimbalHoldType", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_HOLD_TYPE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:76:    put("GimbalWorkMode", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_WORK_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:77:    put("GimbalAxisMode", Ronin2GimbalParamsManager.BaseCommand.FLOWER_SPECIAL_CMD);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:78:    put("PushEnableYaw", Ronin2GimbalParamsManager.BaseCommand.PUSH_ENABLE_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:79:    put("PushEnablePitch", Ronin2GimbalParamsManager.BaseCommand.PUSH_ENABLE_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:80:    put("PushEnableRoll", Ronin2GimbalParamsManager.BaseCommand.PUSH_ENABLE_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:81:    put("GimbalInputSource", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_INPUT_SOURCE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:82:    put("GimbalCreateSmoothRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:83:    put("GimbalCreateSmoothPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:84:    put("GimbalCreateSmoothYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:85:    put("GimbalCreateMaxSpeedRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:86:    put("GimbalCreateMaxSpeedPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:87:    put("GimbalCreateMaxSpeedYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:88:    put("GimbalMotionSmoothRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:89:    put("GimbalMotionSmoothPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:90:    put("GimbalMotionSmoothYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:91:    put("GimbalMotionMaxSpeedRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:92:    put("GimbalMotionMaxSpeedPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:93:    put("GimbalMotionMaxSpeedYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:94:    put("GimbalGamepadSmoothRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:95:    put("GimbalGamepadSmoothPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:96:    put("GimbalGamepadSmoothYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_SMOOTH_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:97:    put("GimbalGamepadMaxSpeedRoll", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:98:    put("GimbalGamepadMaxSpeedPitch", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:99:    put("GimbalGamepadMaxSpeedYaw", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_CREATE_MAX_SPEED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:100:    put("TrackingSpeed", Ronin2GimbalParamsManager.BaseCommand.TRACKING_SPEED);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:101:    put("TrackingOrientationVertical", Ronin2GimbalParamsManager.BaseCommand.TRACKING_ORIENTATION_VERTICAL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:102:    put("GimbalAutoMovement", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_AUTO_MOVEMENT);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:103:    put("GimbalFoldMode", Ronin2GimbalParamsManager.BaseCommand.GIMBAL_FOLD_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:104:    put("YawSmoothTrackEnabled", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ENABLED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:105:    put("PitchSmoothTrackEnabled", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ENABLED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:106:    put("RollSmoothTrackEnabled", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ENABLED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:107:    put("YawSmoothTrackSpeed", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_SPEED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:108:    put("PitchSmoothTrackSpeed", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_SPEED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:109:    put("RollSmoothTrackSpeed", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_SPEED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:110:    put("YawSmoothTrackDeadband", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_DEADBAND_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:111:    put("PitchSmoothTrackDeadband", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_DEADBAND_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:112:    put("RollSmoothTrackDeadband", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_DEADBAND_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:113:    put("YawSmoothTrackAcceleration", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ACCELERATION_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:114:    put("PitchSmoothTrackAcceleration", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ACCELERATION_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:115:    put("RollSmoothTrackAcceleration", Ronin2GimbalParamsManager.BaseCommand.SMOOTH_TRACK_ACCELERATION_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:116:    put("YawControllerSmoothingFactor", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_SMOOTHING_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:117:    put("PitchControllerSmoothingFactor", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_SMOOTHING_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:118:    put("RollControllerSmoothingFactor", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_SMOOTHING_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:119:    put("YawControllerDeadband", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_DEADBAND_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:120:    put("PitchControllerDeadband", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_DEADBAND_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:121:    put("RollControllerDeadband", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_DEADBAND_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:122:    put("ControllerMaxSpeedYaw", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_MAX_SPEED_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:123:    put("ControllerMaxSpeedPitch", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_MAX_SPEED_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:124:    put("ControllerMaxSpeedRoll", Ronin2GimbalParamsManager.BaseCommand.CONTROLLER_MAX_SPEED_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:125:    put("Ronin2MaxAngleYaw", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MAX_ANGLE_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:126:    put("Ronin2MinAngleYaw", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MIN_ANGLE_YAW);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:127:    put("Ronin2MaxAnglePitch", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MAX_ANGLE_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:128:    put("Ronin2MinAnglePitch", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MIN_ANGLE_PITCH);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:129:    put("Ronin2MaxAngleRoll", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MAX_ANGLE_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:130:    put("Ronin2MinAngleRoll", Ronin2GimbalParamsManager.BaseCommand.RONIN2_MIN_ANGLE_ROLL);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:131:    put("IsChannel1Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_1_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:132:    put("Channel1MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_1_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:133:    put("IsChannel2Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_2_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:134:    put("Channel2MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_2_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:135:    put("IsChannel3Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_3_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:136:    put("Channel3MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_3_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:137:    put("IsChannel4Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_4_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:138:    put("Channel4MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_4_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:139:    put("IsChannel5Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_5_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:140:    put("Channel5MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_5_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:141:    put("IsChannel6Rev", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_6_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:142:    put("Channel6MapState", Ronin2GimbalParamsManager.BaseCommand.RONIN2_CHANNEL_6_PARAMS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:143:    put("IsAutoTune", Ronin2GimbalParamsManager.BaseCommand.AUTO_TUNE_ENABLED);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:144:    put("AutoTuneProgress", Ronin2GimbalParamsManager.BaseCommand.AUTO_TUNE_ENABLED);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:145:    put("AutoTunePercent", Ronin2GimbalParamsManager.BaseCommand.AUTO_TUNE_PERCENT);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:146:    put("FollowSpeedMode", Ronin2GimbalParamsManager.BaseCommand.FOLLOW_SPEED_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:147:    put("FollowDeadZoneMode", Ronin2GimbalParamsManager.BaseCommand.FOLLOW_DEAD_ZONE_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:148:    put("RcSpeedMode", Ronin2GimbalParamsManager.BaseCommand.RC_SPEED_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:149:    put("RcDeadZoneMode", Ronin2GimbalParamsManager.BaseCommand.RC_DEAD_ZONE_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:150:    put("RcSmoothMode", Ronin2GimbalParamsManager.BaseCommand.RC_SMOOTH_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:151:    put("ControlParamMode", Ronin2GimbalParamsManager.BaseCommand.CONTROL_PARAM_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:152:    put("FollowAcceMode", Ronin2GimbalParamsManager.BaseCommand.FOLLOW_ACCE_MODE);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:197:    localScheduledThreadPoolExecutor.scheduleAtFixedRate(new -..Lambda.Ronin2SubscribeIMPL.QvdLre9uNacWlNhYs8Kq-bni-Lw(this), 0L, 1L, TimeUnit.SECONDS);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:208:  private void put(String arg1, Ronin2GimbalParamsManager.BaseCommand arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:242:    return DJIComponentManager.GimbalComponentType.Ronin2;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/gimbal/Ronin2SubscribeIMPL.java:301:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\dji\common\gimbal\Ronin2SubscribeIMPL.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/product/Model.java:29:    RONIN2 = new Model("RONIN2", 29, "Ronin2");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/product/Model.java:30:    RONINS = new Model("RONINS", 30, "RoninS");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/product/Model.java:31:    RONINSC = new Model("RONINSC", 31, "RoninSC");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/common/product/Model.java:37:    $VALUES = new Model[] { INSPIRE_1, INSPIRE_1_PRO, INSPIRE_1_RAW, INSPIRE_2, MATRICE_100, PHANTOM_3_ADVANCED, PHANTOM_3_PROFESSIONAL, PHANTOM_3_STANDARD, Phantom_3_4K, PHANTOM_4, PHANTOM_4_PRO, OSMO, OSMO_MOBILE, OSMO_PRO, OSMO_RAW, OSMO_PLUS, MATRICE_600, M200, M210, M210RTK, MATRICE_600_PRO, PHANTOM_4_ADV, A3, N3, UNKNOWN_AIRCRAFT, UNKNOWN_HANDHELD, MAVIC_PRO, Mammoth, ZENMUSE_Z3, RONIN2, RONINS, RONINSC, HG702, HG710, HG702_Monitor, localModel };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/internal/logics/countrycode/CountryCodeLogicManager.java:19:  private static final Model[] SUPPORTED_MODEL = { Model.MAVIC_PRO, Model.INSPIRE_2, Model.PHANTOM_4_PRO, Model.RONIN2, Model.RONINS, Model.RONINSC };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/log/RoninLog.java:5:public class RoninLog
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/log/RoninLog.java:285:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\dji\log\RoninLog.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/ArTapGroundDisplayView.java:7:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/ArTapGroundDisplayView.java:112:    RoninLog.d(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/min3d/core/RenderCaps.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/min3d/core/RenderCaps.java:99:    RoninLog.v("Min3D", paramGL10.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/min3d/core/RenderCaps.java:103:    RoninLog.v("Min3D", paramGL10.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/min3d/core/RenderCaps.java:107:    RoninLog.v("Min3D", paramGL10.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ar/min3d/core/RenderCaps.java:111:    RoninLog.v("Min3D", paramGL10.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/base/BleLog.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/base/BleLog.java:28:      RoninLog.logWriteD("BleLog", localStringBuilder.toString(), "BLELog", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/base/BleLog.java:41:    RoninLog.logWriteE("BleLog", localStringBuilder.toString(), "BLELog", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/base/BleScanner.java:21:  public static final String RONIN_DEVICE_NAME = "Ronin";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/DJIBLEDeviceType.java:20:    RONIN2 = new DJIBLEDeviceType("RONIN2", 2, 2);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/DJIBLEDeviceType.java:21:    RONINS = new DJIBLEDeviceType("RONINS", 3, 3);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/DJIBLEDeviceType.java:27:    $VALUES = new DJIBLEDeviceType[] { HG300, DJIWATCH, RONIN2, RONINS, HG701, HG702, HG710, localDJIBLEDeviceType };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ble2/DJIBLEDeviceType.java:80:            if (k > RONINS.value()) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:23:  private static final int RONINS = 3;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:106:  private boolean isGimbalRonin()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:231:  private boolean isPlatformRonin2()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:236:  private boolean isPlatformRoninS()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:241:  private boolean isPlatformRoninSC()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:622:      $VALUES = new GimbalComponentType[] { None, Ronin, Ronin2, Ronins, HG701, HG702, HG710, localGimbalComponentType };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:663:      Ronin2 = new PlatformType("Ronin2", 20);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:664:      RoninS = new PlatformType("RoninS", 21);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:665:      RoninSC = new PlatformType("RoninSC", 22);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/DJIComponentManager.java:671:      $VALUES = new PlatformType[] { None, P3x, P3s, P3c, P3w, Inspire, M100, OSMO, OSMOMobile, P4, M600, Inspire2, M200, M210, M210RTK, FoldingDrone, Mammoth, P4P, M600Pro, P4A, Ronin2, RoninS, RoninSC, HG702, HG710, Monitor1, localPlatformType };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/rc/RcHardWareType.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/component/rc/RcHardWareType.java:53:    RoninLog.d("RcHardWareType", (String)localObject, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalGetPushType.java:83:      Ronin = new DJIGimbalType("Ronin", 9, 10);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalGetPushType.java:95:      Ronin2 = new DJIGimbalType("Ronin2", 21, 23);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalGetPushType.java:96:      RoninS = new DJIGimbalType("RoninS", 22, 25);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalGetPushType.java:97:      RoninSC = new DJIGimbalType("RoninSC", 23, 40);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalGetPushType.java:102:      $VALUES = new DJIGimbalType[] { TIMEOUT, FAULT, FC550, FC300SX, FC260, FC350, FC350Z, Z15, P4, Ronin, D5, GH4, A7, BMPCC, WM330, WM331, WM620_X5S, WM620_OneInch, GD600, WM220, WM620_FullFrame, Ronin2, RoninS, RoninSC, HG702, HG710, localDJIGimbalType };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:6:public class DataGimbalRoninGetUserParams
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:10:  private static DataGimbalRoninGetUserParams instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:13:  public static DataGimbalRoninGetUserParams getInstance()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:18:        instance = new DataGimbalRoninGetUserParams();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:20:      DataGimbalRoninGetUserParams localDataGimbalRoninGetUserParams = instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:21:      return localDataGimbalRoninGetUserParams;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:44:  public DataGimbalRoninGetUserParams setInfos(String[] paramArrayOfString)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninGetUserParams.java:70:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\data\model\P3\DataGimbalRoninGetUserParams.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:8:public class DataGimbalRoninSetUserParams
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:12:  private static DataGimbalRoninSetUserParams instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:19:  public static DataGimbalRoninSetUserParams getInstance()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:24:        instance = new DataGimbalRoninSetUserParams();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:26:      DataGimbalRoninSetUserParams localDataGimbalRoninSetUserParams = instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:27:      return localDataGimbalRoninSetUserParams;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:41:  public DataGimbalRoninSetUserParams setIndexs(String... paramVarArgs)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:47:  public DataGimbalRoninSetUserParams setInfo(String paramString)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:55:  public DataGimbalRoninSetUserParams setInfo(String paramString, Number paramNumber)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:71:  public DataGimbalRoninSetUserParams setTimeOut(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:77:  public DataGimbalRoninSetUserParams setValues(Number... paramVarArgs)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataGimbalRoninSetUserParams.java:168:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\data\model\P3\DataGimbalRoninSetUserParams.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataMonitorGetPushType.java:45:      $VALUES = new MonitorType[] { Ronin1, localMonitorType };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:7:public class DataRonin2SetTimelapseParams
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:12:  private static final String TAG = "DataRonin2SetTimelapseParams";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:31:  public DataRonin2SetTimelapseParams setDuration(long paramLong)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:37:  public DataRonin2SetTimelapseParams setIsTripod(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:42:  public DataRonin2SetTimelapseParams setMode(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:47:  public DataRonin2SetTimelapseParams setStartOrPreview(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:52:  public DataRonin2SetTimelapseParams setStartOrStop(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin2SetTimelapseParams.java:84:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\data\model\P3\DataRonin2SetTimelapseParams.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:6:public class DataRonin_batteryActiveStatus
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:9:  private static DataRonin_batteryActiveStatus instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:12:  public static DataRonin_batteryActiveStatus getInstance()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:17:        instance = new DataRonin_batteryActiveStatus();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:19:      DataRonin_batteryActiveStatus localDataRonin_batteryActiveStatus = instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:20:      return localDataRonin_batteryActiveStatus;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:30:  public DataRonin_batteryActiveStatus setIndexMultiBattery(int paramInt)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/data/model/P3/DataRonin_batteryActiveStatus.java:47:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\data\model\P3\DataRonin_batteryActiveStatus.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/encryption/util/AES256Encryption.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/encryption/util/AES256Encryption.java:54:          RoninLog.e((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:15:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:192:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_ins", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:202:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_640x368_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:207:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_608x448_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:212:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_720x480_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:217:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:222:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1080x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:227:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1088x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:232:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_960x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:237:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1360x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:242:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1344x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:247:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1440x1088_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:252:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1632x1080_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:257:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1760x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:262:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x800_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:267:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1024_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:272:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1080_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:283:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1440_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:310:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_640x368_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:315:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_608x448_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:320:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_720x480_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:325:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:330:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1080x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:335:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1088x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:340:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_960x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:345:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1360x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:350:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1344x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:355:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1440x1088_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:360:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1632x1080_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:365:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1760x720_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:370:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x800_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:375:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1024_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:380:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1080_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:391:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1920x1440_wm620", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:438:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_p4", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:454:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=-1", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:475:      RoninLog.d("DJIVideoDecoder", paramProductType.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:487:          RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_3s", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:490:        RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_848x480", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:493:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_640x480", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:498:      RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_960x720_3s", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoDecoder.java:501:    RoninLog.i("DJIVideoDecoder", "Selected Iframe=iframe_1280x720_3s", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:13:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:246:    RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:258:    RoninLog.i(str, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:273:    RoninLog.i(str, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:302:    RoninLog.i(paramMediaCodec1, paramMediaCodec2.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/DJIVideoUtil.java:546:    RoninLog.i(paramByteBuffer, ((StringBuilder)localObject1).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:40:      RoninLog.d(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:54:      RoninLog.e(paramString, eToStr(paramException), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:61:      RoninLog.e(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:100:    RoninLog.logWriteD(paramString, eToStr(paramException), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:114:      RoninLog.i(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:144:    RoninLog.logWriteD(TAG, paramException, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:146:      RoninLog.i(TAG, paramException, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:152:    RoninLog.d(TAG, paramString, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:154:      RoninLog.i(TAG, paramString, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:165:    RoninLog.d(paramString, (String)paramObject, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:167:      RoninLog.i(TAG, (String)paramObject, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:173:    RoninLog.d(TAG, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:175:      RoninLog.i(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:188:    RoninLog.d(paramString, eToStr(paramException), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/MediaLogger.java:193:    RoninLog.logWriteD(paramString1, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/metadata/VideoMetadataManager.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/metadata/VideoMetadataManager.java:28:    RoninLog.i((String)localObject1, ((StringBuilder)localObject2).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/metadata/VideoMetadataManager.java:113:    RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/mp4/MP4Parser.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/mp4/MP4Parser.java:78:        RoninLog.e((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/mp4/MP4Parser.java:90:        RoninLog.e(paramArrayOfByte, ((StringBuilder)localObject).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLContextMgr.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLContextMgr.java:30:    RoninLog.i("GLContextMgr17", "OpenGL init Surface/pBuffer/Context successful!", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLContextMgr18plus.java:8:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLContextMgr18plus.java:25:    RoninLog.i("GLContextMgr18", "GLContextMgr18 init successful!", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLUtil.java:7:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/opengl/GLUtil.java:47:      RoninLog.e((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/player/Copy_2_of_DJIMediaPlayerLitchix.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/player/Copy_2_of_DJIMediaPlayerLitchix.java:41:    RoninLog.d("", localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/player/DJIMediaPlayerLitchix.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/player/DJIMediaPlayerLitchix.java:31:    RoninLog.d("", localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderAudioMp4.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderAudioMp4.java:46:    RoninLog.i(TAG, "An instance is created", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderFullFrame.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderFullFrame.java:28:    RoninLog.i(TAG, "An instance is created", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderH264.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderH264.java:22:    RoninLog.i(TAG, "An instance is created", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:246:        RoninLog.i((String)localObject2, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:258:      RoninLog.i((String)localObject2, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:275:        RoninLog.i((String)localObject2, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:285:      RoninLog.i((String)localObject2, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:412:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:424:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:436:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:448:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:460:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:472:      RoninLog.i((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:487:    RoninLog.i(TAG, "is now saving a bitmap to a file", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:499:      RoninLog.e(TAG, "error in saving thumb 2", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderManager.java:505:      RoninLog.e(TAG, "error in saving thumb 1", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderMp4.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderMp4.java:27:    RoninLog.i(TAG, "An instance is created", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderQuickMovie.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/record/RecorderQuickMovie.java:262:      RoninLog.d(paramArrayOfByte, paramBufferInfo.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/transcode/offline/EncoderMuxer.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/transcode/offline/EncoderMuxer.java:92:    RoninLog.i(this.TAG, "complete execution of start()", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/transcode/online/OnlineTranscoder.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/media/transcode/online/OnlineTranscoder.java:213:    RoninLog.i(TAG_Internal, "onSpsPpschange", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FlyForbid.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FlyForbid.java:12:      RoninLog.d("FlyForbid", "load lib success", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FlyForbid.java:18:      RoninLog.d("FlyForbid", "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FPVController.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FPVController.java:13:      RoninLog.d("FPVController", "try to load libdjivideo.so", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/FPVController.java:21:    RoninLog.e("FPVController", "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/GroudStation.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/GroudStation.java:12:      RoninLog.d("GroudStation", "load lib suc", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/GroudStation.java:18:      RoninLog.d("GroudStation", "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/SDKRelativeJNI.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/SDKRelativeJNI.java:12:      RoninLog.d("SDKRelativeJNI", "load lib suc", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/SDKRelativeJNI.java:18:      RoninLog.d("SDKRelativeJNI", "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/UpgradeVerify.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/UpgradeVerify.java:12:      RoninLog.d("UpgradeVerify", "load lib suc", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/UpgradeVerify.java:18:      RoninLog.d("UpgradeVerify", "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/Vision.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/Vision.java:13:      RoninLog.d(Vision.class.getName(), "load lib suc", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/natives/Vision.java:19:      RoninLog.d(Vision.class.getName(), "Couldn't load lib", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:943:    public static final int ronin2_gimbal_param_infos = 2131689520;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:1233:    public static final int ronin2_config_default = 2131756536;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:1234:    public static final int ronin2_config_user_1 = 2131756537;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:1235:    public static final int ronin2_config_user_2 = 2131756538;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:1236:    public static final int ronin2_config_user_3 = 2131756539;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/R.java:1237:    public static final int ronin2_config_user_4 = 2131756540;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:1:package dji.midware.ronin2;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:7:import dji.midware.data.model.P3.DataGimbalRoninGetUserParams;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:12:public class Ronin2GimbalParamsManager
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:14:  private static Ronin2GimbalParamsManager instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:17:  private Ronin2GimbalParamsManager()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:38:  public static Ronin2GimbalParamsManager getInstance()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:43:        instance = new Ronin2GimbalParamsManager();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:45:      Ronin2GimbalParamsManager localRonin2GimbalParamsManager = instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:46:      return localRonin2GimbalParamsManager;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:88:      FILTERING_PITCH = new BaseCommand("FILTERING_PITCH", 6, 6, "ronin_filter_pitch", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:89:      FILTERING_ROLL = new BaseCommand("FILTERING_ROLL", 7, 7, "ronin_filter_roll", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:90:      FILTERING_YAW = new BaseCommand("FILTERING_YAW", 8, 8, "ronin_filter_yaw", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:91:      PRECONTROL_PITCH = new BaseCommand("PRECONTROL_PITCH", 9, 9, "ronin_feedback_pitch", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:92:      PRECONTROL_ROLL = new BaseCommand("PRECONTROL_ROLL", 10, 10, "ronin_feedback_roll", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:93:      PRECONTROL_YAW = new BaseCommand("PRECONTROL_YAW", 11, 11, "ronin_feedback_yaw", DataGimbalRoninGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:125:      RONIN2_MAX_ANGLE_YAW = new BaseCommand("RONIN2_MAX_ANGLE_YAW", 43, "ronin2_max_angle_yaw");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:126:      RONIN2_MIN_ANGLE_YAW = new BaseCommand("RONIN2_MIN_ANGLE_YAW", 44, "ronin2_min_angle_yaw");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:127:      RONIN2_MAX_ANGLE_PITCH = new BaseCommand("RONIN2_MAX_ANGLE_PITCH", 45, "ronin2_max_angle_pitch");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:128:      RONIN2_MIN_ANGLE_PITCH = new BaseCommand("RONIN2_MIN_ANGLE_PITCH", 46, "ronin2_min_angle_pitch");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:129:      RONIN2_MAX_ANGLE_ROLL = new BaseCommand("RONIN2_MAX_ANGLE_ROLL", 47, "ronin2_max_angle_roll");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:130:      RONIN2_MIN_ANGLE_ROLL = new BaseCommand("RONIN2_MIN_ANGLE_ROLL", 48, "ronin2_min_angle_roll");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:131:      RONIN2_CHANNEL_1_PARAMS = new BaseCommand("RONIN2_CHANNEL_1_PARAMS", 49, "ronin2_channel_1");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:132:      RONIN2_CHANNEL_2_PARAMS = new BaseCommand("RONIN2_CHANNEL_2_PARAMS", 50, "ronin2_channel_2");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:133:      RONIN2_CHANNEL_3_PARAMS = new BaseCommand("RONIN2_CHANNEL_3_PARAMS", 51, "ronin2_channel_3");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:134:      RONIN2_CHANNEL_4_PARAMS = new BaseCommand("RONIN2_CHANNEL_4_PARAMS", 52, "ronin2_channel_4");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:135:      RONIN2_CHANNEL_5_PARAMS = new BaseCommand("RONIN2_CHANNEL_5_PARAMS", 53, "ronin2_channel_5");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:136:      RONIN2_CHANNEL_6_PARAMS = new BaseCommand("RONIN2_CHANNEL_6_PARAMS", 54, "ronin2_channel_6");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:137:      MOTOR_BLOCK_UP_TIME = new BaseCommand("MOTOR_BLOCK_UP_TIME", 55, 59, "ronin_block_up_time", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:138:      GIMBAL_HOLD_TYPE = new BaseCommand("GIMBAL_HOLD_TYPE", 56, 60, "ronin_gimbal_hold_type", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:139:      GIMBAL_TEST_ENDPOINT = new BaseCommand("GIMBAL_TEST_ENDPOINT", 57, 61, "ronin_gimbal_test_endpoint", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:140:      GIMBAL_WORK_MODE = new BaseCommand("GIMBAL_WORK_MODE", 58, 62, "ronin_gimbal_work_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:141:      AUTO_TUNE_ENABLED = new BaseCommand("AUTO_TUNE_ENABLED", 59, 63, "ronin_auto_tune_enabled", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:142:      AUTO_TUNE_PERCENT = new BaseCommand("AUTO_TUNE_PERCENT", 60, 64, "ronin_auto_tune_percent", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:143:      FOLLOW_SPEED_MODE = new BaseCommand("FOLLOW_SPEED_MODE", 61, 65, "ronin_follow_speed_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:144:      FOLLOW_DEAD_ZONE_MODE = new BaseCommand("FOLLOW_DEAD_ZONE_MODE", 62, 66, "ronin_follow_dead_zone_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:145:      RC_SPEED_MODE = new BaseCommand("RC_SPEED_MODE", 63, 67, "ronin_rc_speed_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:146:      RC_DEAD_ZONE_MODE = new BaseCommand("RC_DEAD_ZONE_MODE", 64, 68, "ronin_rc_dead_zone_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:147:      RC_SMOOTH_MODE = new BaseCommand("RC_SMOOTH_MODE", 65, 69, "ronin_rc_smooth_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:148:      CONTROL_PARAM_MODE = new BaseCommand("CONTROL_PARAM_MODE", 66, 70, "ronin_control_param_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:149:      FOLLOW_ACCE_MODE = new BaseCommand("FOLLOW_ACCE_MODE", 67, 71, "ronin_follow_acce_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:157:      GIMBAL_AUTO_MOVEMENT = new BaseCommand("GIMBAL_AUTO_MOVEMENT", 75, 105, "ronin_gimbal_auto_movement", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:158:      GIMBAL_FOLD_MODE = new BaseCommand("GIMBAL_FOLD_MODE", 76, 107, "ronin_fold_mode", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:159:      TRACKING_SPEED = new BaseCommand("TRACKING_SPEED", 77, 117, "ronin_tracking_speed", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:160:      BaseCommand localBaseCommand = new BaseCommand("TRACKING_ORIENTATION_VERTICAL", 78, 122, "ronin_tracking_orientation_vertical", DataGimbalGetUserParams.class);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:162:      $VALUES = new BaseCommand[] { STIFFNESS_PITCH, STIFFNESS_ROLL, STIFFNESS_YAW, STRENGTH_PITCH, STRENGTH_ROLL, STRENGTH_YAW, FILTERING_PITCH, FILTERING_ROLL, FILTERING_YAW, PRECONTROL_PITCH, PRECONTROL_ROLL, PRECONTROL_YAW, USER_PROFILE, SILENT_MODE, SMOOTH_TRACK_SPEED_YAW, SMOOTH_TRACK_SPEED_PITCH, SMOOTH_TRACK_DEADBAND_YAW, SMOOTH_TRACK_DEADBAND_PITCH, SMOOTH_TRACK_SPEED_ROLL, SMOOTH_TRACK_DEADBAND_ROLL, SMOOTH_TRACK_ACCELERATION_ROLL, SMOOTH_TRACK_ACCELERATION_YAW, SMOOTH_TRACK_ACCELERATION_PITCH, SMOOTH_TRACK_ENABLED_YAW, SMOOTH_TRACK_ENABLED_PITCH, SMOOTH_TRACK_ENABLED_ROLL, PUSH_ENABLE_YAW, PUSH_ENABLE_PITCH, PUSH_ENABLE_ROLL, YAW_FINE_TUNING, PITCH_FINE_TUNING, FLOWER_SPECIAL_CMD, MOTOR_SPECIAL_CMD, BALANCE_TEST, CONTROLLER_DEADBAND_YAW, CONTROLLER_DEADBAND_PITCH, CONTROLLER_DEADBAND_ROLL, CONTROLLER_SMOOTHING_YAW, CONTROLLER_SMOOTHING_PITCH, CONTROLLER_SMOOTHING_ROLL, CONTROLLER_MAX_SPEED_YAW, CONTROLLER_MAX_SPEED_PITCH, CONTROLLER_MAX_SPEED_ROLL, RONIN2_MAX_ANGLE_YAW, RONIN2_MIN_ANGLE_YAW, RONIN2_MAX_ANGLE_PITCH, RONIN2_MIN_ANGLE_PITCH, RONIN2_MAX_ANGLE_ROLL, RONIN2_MIN_ANGLE_ROLL, RONIN2_CHANNEL_1_PARAMS, RONIN2_CHANNEL_2_PARAMS, RONIN2_CHANNEL_3_PARAMS, RONIN2_CHANNEL_4_PARAMS, RONIN2_CHANNEL_5_PARAMS, RONIN2_CHANNEL_6_PARAMS, MOTOR_BLOCK_UP_TIME, GIMBAL_HOLD_TYPE, GIMBAL_TEST_ENDPOINT, GIMBAL_WORK_MODE, AUTO_TUNE_ENABLED, AUTO_TUNE_PERCENT, FOLLOW_SPEED_MODE, FOLLOW_DEAD_ZONE_MODE, RC_SPEED_MODE, RC_DEAD_ZONE_MODE, RC_SMOOTH_MODE, CONTROL_PARAM_MODE, FOLLOW_ACCE_MODE, GIMBAL_INPUT_SOURCE, GIMBAL_CREATE_SMOOTH_ROLL, GIMBAL_CREATE_SMOOTH_PITCH, GIMBAL_CREATE_SMOOTH_YAW, GIMBAL_CREATE_MAX_SPEED_ROLL, GIMBAL_CREATE_MAX_SPEED_PITCH, GIMBAL_CREATE_MAX_SPEED_YAW, GIMBAL_AUTO_MOVEMENT, GIMBAL_FOLD_MODE, TRACKING_SPEED, localBaseCommand };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2GimbalParamsManager.java:205:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\ronin2\Ronin2GimbalParamsManager.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:1:package dji.midware.ronin2;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:22:public class Ronin2ParamConfigManager
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:28:  private static Ronin2ParamConfigManager instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:33:  private Ronin2ParamConfigManager(Context paramContext)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:73:      localArrayList.add(new CustomConfiguration(paramContext.getResources().getString(R.string.ronin2_config_default), ConfigurableParam.defaultUserConfig(), false));
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:74:      this.mCustomConfigurations.add(new CustomConfiguration(paramContext.getResources().getString(R.string.ronin2_config_user_1), ConfigurableParam.defaultUserConfig(), false));
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:75:      this.mCustomConfigurations.add(new CustomConfiguration(paramContext.getResources().getString(R.string.ronin2_config_user_2), ConfigurableParam.defaultUserConfig(), false));
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:76:      this.mCustomConfigurations.add(new CustomConfiguration(paramContext.getResources().getString(R.string.ronin2_config_user_3), ConfigurableParam.defaultUserConfig(), false));
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:77:      this.mCustomConfigurations.add(new CustomConfiguration(paramContext.getResources().getString(R.string.ronin2_config_user_4), ConfigurableParam.defaultUserConfig(), false));
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:82:  public static Ronin2ParamConfigManager getInstance()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:86:      Ronin2ParamConfigManager localRonin2ParamConfigManager = instance;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:87:      return localRonin2ParamConfigManager;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:98:    instance = new Ronin2ParamConfigManager(paramContext);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:190:      localConfigurableParam.mStiffnessPan = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_YAW.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:191:      localConfigurableParam.mStiffnessTilt = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_PITCH.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:192:      localConfigurableParam.mStiffnessRoll = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STIFFNESS_ROLL.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:193:      localConfigurableParam.mStrengthPan = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STRENGTH_YAW.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:194:      localConfigurableParam.mStrengthTilt = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STRENGTH_PITCH.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:195:      localConfigurableParam.mStrengthRoll = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.STRENGTH_ROLL.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:196:      localConfigurableParam.mFilterPan = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.FILTERING_YAW.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:197:      localConfigurableParam.mFilterTilt = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.FILTERING_PITCH.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:198:      localConfigurableParam.mFilterRoll = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.FILTERING_ROLL.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:199:      localConfigurableParam.mControlPan = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_YAW.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:200:      localConfigurableParam.mControlTilt = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_PITCH.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:201:      localConfigurableParam.mControlRoll = DJIGimbalParamInfoManager.read(Ronin2GimbalParamsManager.BaseCommand.PRECONTROL_ROLL.getKeyNameStr()).value.intValue();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:229:    public Ronin2ParamConfigManager.ConfigurableParam mConfigurableParam;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:231:    public CustomConfiguration(String paramString, Ronin2ParamConfigManager.ConfigurableParam paramConfigurableParam)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:237:    public CustomConfiguration(String paramString, Ronin2ParamConfigManager.ConfigurableParam paramConfigurableParam, boolean paramBoolean)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/ronin2/Ronin2ParamConfigManager.java:247:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\midware\ronin2\Ronin2ParamConfigManager.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdk/AES.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdk/AES.java:55:      RoninLog.d(paramSecretKeySpec, ((StringBuilder)localObject).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdk/AES.java:85:      RoninLog.d(paramArrayOfByte, paramSecretKeySpec.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdk/AES.java:121:      RoninLog.d(paramArrayOfByte, paramSecretKeySpec.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:6:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:63:      RoninLog.d((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:68:      RoninLog.d(str, ((StringBuilder)localObject).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:78:      RoninLog.d((String)localObject, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:83:      RoninLog.d(str, ((StringBuilder)localObject).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/sdr/log/DJISdrLogDataReciever.java:98:      RoninLog.d(paramString, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/usb/P3/UsbAccessoryService.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/usb/P3/UsbAccessoryService.java:98:        RoninLog.d(paramAnonymousArrayOfByte, localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/usbhost/P3/NativeRcController.java:5:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/usbhost/P3/NativeRcController.java:24:      RoninLog.d("NativeRcController", "x try to load libusbdec.so", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/usbhost/P3/NativeRcController.java:32:    RoninLog.e("NativeRcController", "Couldn't load libusbdec.so", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/util/DebugFlag.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/util/DebugFlag.java:18:    RoninLog.d(str, paramString2, new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/util/NetworkUtils.java:6:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/util/NetworkUtils.java:81:    RoninLog.i(TAG, "Don't have permission to check connectivity, will assume we are online", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/BridgeWSConnectionManager.java:4:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/BridgeWSConnectionManager.java:51:      RoninLog.d("WSOCKET", ((StringBuilder)localObject).toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/BridgeWSConnectionManager.java:91:      RoninLog.d("WSOCKET", localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/DJIWebSocketClient.java:3:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/DJIWebSocketClient.java:40:    RoninLog.d("WSOCKET", "Starting...", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/midware/wsbridge/DJIWebSocketClient.java:58:    RoninLog.d("WSOCKET", localStringBuilder.toString(), new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActivateUtils.java:16:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActivateUtils.java:144:    RoninLog.logWriteE("ACTIVATE_NEW", localStringBuilder.toString(), "active", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActivateUtils.java:149:    RoninLog.logWriteE("ACTIVATE_NEW", paramString, "active", new Object[0]);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveDeviceController.java:4:import com.dji.ronin.publics.AssistUIHandler;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:4:import com.dji.ronin.publics.AssistUIHandler;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:5:import com.dji.ronin.util.CommonUtils;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:96:    if (CommonUtils.isRonin2(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:97:      return "Ronin2";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:99:    if (CommonUtils.isRoninS(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:100:      return "ronin-s";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:103:      return "Ronin-SC";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/active/ActiveWebController.java:111:    return "Ronin2";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/bugly/DJIBuglyUtils.java:9:import com.dji.ronin.RoninApplication;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/bugly/DJIBuglyUtils.java:10:import com.dji.ronin.publics.util.FileUtil;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/bugly/DJIBuglyUtils.java:54:    String str = getBuildNumber(RoninApplication.getAppContext());
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/privacy/PrivacyFlowTermsActivity.java:27:    localStringBuilder.append("terms/dji-ronin-terms-of-use-en-2.0-2020-06-10.html");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/privacy/PrivacyFlowTermsActivity.java:31:    localStringBuilder.append("htmls/dji-ronin-privacy-notice-20200119.html");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:8:import com.dji.ronin.publics.util.HmacEncryptUtil;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:9:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:493:    localFinalHttp.addHeader("AppId-Mc", "djironin");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:494:    log("header -> %s: %s", new Object[] { "AppId-Mc", "djironin" });
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:506:    localStringBuilder.append("djironin");
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/MemberProtocolBox.java:523:    RoninLog.logWriteE("AccountCenter", paramString, "AccountCenter", paramVarArgs);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/sign/DJIAccountSignInFragment.java:16:import com.dji.ronin.publics.util.Util;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/sign/DJIAccountSignInFragment.java:90:  private String mPrivacyUrl = "https://content.djiservice.org/agreement/dji-ronin-pp-en-1.0.html";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/sign/DJIAccountSignInFragment.java:95:  private String mUseTermsUrl = "https://content.djiservice.org/agreement/dji-ronin-terms-of-use-en-1.0.html";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/sign/DJIAccountSignUpFragment.java:64:  private String mPrivacyUrl = "https://content.djiservice.org/agreement/dji-ronin-pp-en-1.0.html";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/pilot/usercenter/sign/DJIAccountSignUpFragment.java:66:  private String mUseTermsUrl = "https://content.djiservice.org/agreement/dji-ronin-terms-of-use-en-1.0.html";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:5:  public static final String Create = "Ronin_s_create";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:7:  public static final String FIRMWARE_UPGRADE = "Ronin_sc_firmware_update";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:8:  public static final String Motor_Advanced_Settings = "Ronin_s_motor_advanced_settings";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:9:  public static final String Motor_Autotune = "Ronin_s_motor_autotune";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:10:  public static final String Motor_Customize_Settings = "Ronin_s_motor_customize_settings";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:11:  public static final String Panorama = "Ronin_s_pano";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:12:  public static final String RoninS_3d_roll_360 = "Ronin_s_3d_roll_360";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:13:  public static final String Ronin_App_Tutorial = "Ronin_app_tutorial";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:14:  public static final String Ronin_App_Upgrade = "Ronin_app_update";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:15:  public static final String Ronin_Sc_Balance_Test = "Ronin_sc_banlance_test";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:16:  public static final String Ronin_Sc_Beginner_Guide = "Ronin_sc_beginner_guide";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:17:  public static final String Ronin_Sc_Device_Data = "hg701_device_data";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:18:  public static final String Ronin_Sc_Motor_Banlance_Test_Tutorial = "Ronin_sc_motor_banlance_test_tutorial";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:19:  public static final String Ronin_System_Status = "Ronin_system_status";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:20:  public static final String Smooth_Track_Pan = "Ronin_s_smooth_track_pan";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:21:  public static final String Smooth_Track_Roll = "Ronin_s_smooth_track_roll";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:22:  public static final String Smooth_Track_Tilt = "Ronin_s_smooth_track_tilt";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:23:  public static final String TIMELAPSE = "Ronin_s_timelapse";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:24:  public static final String TRACKING = "Ronin_sc_create_tracking";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Event.java:25:  public static final String USER_PROFILE = "Ronin_sc_user_profile_setting";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:26:  public static abstract interface RoninAppUpgrade
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:33:  public static abstract interface RoninCreateTracking
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:41:  public static abstract interface RoninFirmwareUpgrade
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:48:  public static abstract interface RoninGimbalBalanceTest
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:57:  public static abstract interface RoninGimbalBalanceTutorial
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:63:  public static abstract interface RoninS3DRoll360
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:70:  public static abstract interface RoninSMotor
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:73:    public static final String RONIN_S_MOTOR_ACTION = "action";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:76:  public static abstract interface RoninSSmoothTrackPan
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:87:  public static abstract interface RoninSSmoothTrackRoll
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:98:  public static abstract interface RoninSSmoothTrackTilt
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:109:  public static abstract interface RoninScDeviceData
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:112:    public static final String RONIN_SC_DEVICE_ACTION = "hg701_device_action";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:113:    public static final String RONIN_SC_DEVICE_ACTION_VALUE = "hg701_device_action_value";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:116:  public static abstract interface RoninSystemStatus
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:122:  public static abstract interface RoninTutorial
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:130:  public static abstract interface RoninUserProfile
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:147:  public static abstract interface RoninsCreate
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:154:  public static abstract interface RoninsCreateDelay
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:163:  public static abstract interface RoninsCreatePanorama
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Fields.java:170:  public static abstract interface RoninscBeginnerGuide
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:151:  public static abstract interface RoninGimbalBalanceTest
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:162:  public static abstract interface RoninGimbalBalanceTutorial
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:172:  public static abstract interface RoninS3DRoll360Action
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:178:  public static abstract interface RoninS3DRoll360Result
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:184:  public static abstract interface RoninScBeginnerGuide
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:194:  public static abstract interface RoninSystemStatus
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:206:  public static abstract interface RoninTutorial
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:210:    public static final String DEVICE_RONIN_2 = "1";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:211:    public static final String DEVICE_RONIN_S = "2";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/base/Values.java:212:    public static final String DEVICE_RONIN_SC = "3";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:7:import com.dji.ronin.RoninApplication;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:8:import com.dji.ronin.util.CommonUtils;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:9:import com.dji.upgrade.RoninUpgradeManager;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:10:import dji.log.RoninLog;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:75:    if (CommonUtils.isRonin2(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:76:      str = "ronin-2";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:77:    } else if (CommonUtils.isRoninS(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:78:      str = "ronin-s";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:80:      str = "ronin-sc";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:88:    str = RoninUpgradeManager.getInstance().getDeviceVersionString();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:122:    return RoninUpgradeManager.getInstance().getDeviceVersionString();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:152:  public static HashMap<String, String> getRoninsCommonData()
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:155:    if (CommonUtils.isRonin2(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:156:      str = "ronin-2";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:157:    } else if (CommonUtils.isRoninS(null)) {
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:158:      str = "ronin-s";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:160:      str = "ronin-sc";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:170:    String str = RoninUpgradeManager.getInstance().getDeviceVersionString();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:219:      Context localContext = RoninApplication.getAppContext();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/publics/LogReport/DJIReportUtil.java:277:    RoninLog.logWriteE("testreport", "testreport", "getReportProductName=%s getReportAppVersion=%s getReportDeviceVersion=%s getReportFCSn=%s", new Object[] { getReportProductName(null), getReportAppVersion(), getReportDeviceVersion(), getReportFCSn() });
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:992:    public static final int ronin2_gimbal_param_infos = 2131689520;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:1283:    public static final int ronin2_config_default = 2131756536;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:1284:    public static final int ronin2_config_user_1 = 2131756537;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:1285:    public static final int ronin2_config_user_2 = 2131756538;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:1286:    public static final int ronin2_config_user_3 = 2131756539;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdkcache/R.java:1287:    public static final int ronin2_config_user_4 = 2131756540;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/battery/DJIBatteryRonin2Abstraction.java:6:public class DJIBatteryRonin2Abstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/battery/DJIBatteryRonin2Abstraction.java:35:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\battery\DJIBatteryRonin2Abstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/battery/DJIBatteryRoninsAbstraction.java:6:public class DJIBatteryRoninsAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/battery/DJIBatteryRoninsAbstraction.java:12:  private static final String TAG = "BatteryRoninsAbstraction";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/battery/DJIBatteryRoninsAbstraction.java:50:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\battery\DJIBatteryRoninsAbstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalHG701Abstraction.java:4:  extends DJIGimbalRonin2Abstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalHG702Abstraction.java:7:  extends DJIGimbalRonin2Abstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:5:import dji.common.gimbal.Ronin2SubscribeIMPL;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:13:import dji.midware.ronin2.Ronin2GimbalParamsManager.BaseCommand;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:19:public class DJIGimbalRonin2Abstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:20:  extends DJIGimbalRoninBaseAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:22:  private static final String TAG = "GimbalRonin2Abstraction";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:25:  private Map<String, Ronin2GimbalParamsManager.BaseCommand> mCacheKeyCommandParamMap = new HashMap();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:46:  private IGimbalSubscribe mSubscribeController = new Ronin2SubscribeIMPL();
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:50:  private void addMinMaxToCapability(dji.common.gimbal.CapabilityKey arg1, Ronin2GimbalParamsManager.BaseCommand arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:82:  private void setRonin2CommonUserParam(int arg1, String arg2, DJISDKCacheHWAbstraction.InnerCallback arg3)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:91:  private void setRonin2MotorParam(int arg1, String arg2, DJISDKCacheHWAbstraction.InnerCallback arg3)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:177:  public void onEvent3BackgroundThread(dji.midware.data.model.P3.DataGimbalRoninGetUserParams arg1)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:387:  public void setGimbalAxisMode(dji.common.gimbal.DJIGimbalRonin2AxisMode arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:407:  public void setGimbalWorkMode(dji.common.gimbal.DJIGimbalRonin2WorkMode arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:637:  public void setRonin2Channel1MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:647:  public void setRonin2Channel1Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:657:  public void setRonin2Channel2MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:667:  public void setRonin2Channel2Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:677:  public void setRonin2Channel3MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:687:  public void setRonin2Channel3Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:697:  public void setRonin2Channel4MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:707:  public void setRonin2Channel4Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:717:  public void setRonin2Channel5MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:727:  public void setRonin2Channel5Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:737:  public void setRonin2Channel6MapState(GimbalMapState arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:747:  public void setRonin2Channel6Rev(boolean arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:756:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MaxAnglePitch")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:757:  public void setRonin2MaxAnglePitch(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:766:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MaxAngleRoll")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:767:  public void setRonin2MaxAngleRoll(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:776:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MaxAngleYaw")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:777:  public void setRonin2MaxAngleYaw(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:786:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MinAnglePitch")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:787:  public void setRonin2MinAnglePitch(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:796:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MinAngleRoll")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:797:  public void setRonin2MinAngleRoll(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:806:  @dji.sdksharedlib.hardware.abstractions.Setter("Ronin2MinAngleYaw")
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:807:  public void setRonin2MinAngleYaw(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRonin2Abstraction.java:926:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\gimbal\DJIGimbalRonin2Abstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:10:public class DJIGimbalRoninBaseAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:13:  protected static final String[] RONIN_COMMAND = { "ronin_sensibility_yaw", "ronin_sensibility_pitch", "ronin_sensibility_roll", "ronin_strength_yaw", "ronin_strength_pitch", "ronin_strength_roll", "ronin_filter_yaw", "ronin_filter_pitch", "ronin_filter_roll", "ronin_feedback_yaw", "ronin_feedback_pitch", "ronin_feedback_roll", "ronin_pitch_up", "ronin_pitch_down", "ronin_yaw_left", "ronin_yaw_right", "pitch_dead_zone", "yaw_dead_zone", "pitch_expo", "yaw_expo", "pitch_time_expo", "yaw_time_expo", "system_calc", "balance_test" };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:14:  private final int[][] RONIN_CAMERA_DEFAULT_PARAMS = { { 73, 75, 70, 40, 40, 25, 0, 0, 0, 20, 60, 60 }, { 55, 45, 45, 40, 40, 40, 0, 0, 0, 20, 60, 60 }, { 50, 45, 45, 20, 40, 40, 0, 0, 0, 0, 60, 60 } };
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:19:  private void getRoninMotorParam(int arg1, DJISDKCacheHWAbstraction.InnerCallback arg2)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:564:  protected void setRoninMotorParam(int arg1, int arg2, DJISDKCacheHWAbstraction.InnerCallback arg3)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninBaseAbstraction.java:594:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\gimbal\DJIGimbalRoninBaseAbstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninMXAbstraction.java:3:public class DJIGimbalRoninMXAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninMXAbstraction.java:4:  extends DJIGimbalRoninBaseAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninMXAbstraction.java:8:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\gimbal\DJIGimbalRoninMXAbstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninSAbstraction.java:3:public class DJIGimbalRoninSAbstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninSAbstraction.java:4:  extends DJIGimbalRonin2Abstraction
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/gimbal/DJIGimbalRoninSAbstraction.java:17:/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\gimbal\DJIGimbalRoninSAbstraction.class
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/product/DJIProductAbstraction.java:75:  public boolean isRonin(DJIComponentManager.PlatformType paramPlatformType, DJIComponentManager.MonitorComponentType paramMonitorComponentType)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/product/DJIProductAbstraction.java:77:    return (isHandle(paramPlatformType, paramMonitorComponentType)) || (paramPlatformType == DJIComponentManager.PlatformType.Ronin2);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/hardware/abstractions/product/DJIProductAbstraction.java:80:  public boolean isRoninWithMonitor(DJIComponentManager.PlatformType paramPlatformType, DJIComponentManager.MonitorComponentType paramMonitorComponentType)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/BatteryKeys.java:88:  @ComplexKey({@Key(accessType=1, includedAbstractions={BatteryBaseAggregationAbstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC), @Key(accessType=4, includedAbstractions={dji.sdksharedlib.hardware.abstractions.battery.DJIBatteryRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/DJISDKCacheKeys.java:7:import dji.sdksharedlib.hardware.abstractions.gimbal.DJIGimbalRoninMXAbstraction;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/DJISDKCacheKeys.java:22:  @Key(accessType=1, excludedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=String.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:7:import dji.common.gimbal.DJIGimbalRonin2AxisMode;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:8:import dji.common.gimbal.DJIGimbalRonin2WorkMode;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:22:import dji.sdksharedlib.hardware.abstractions.gimbal.DJIGimbalRonin2Abstraction;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:23:import dji.sdksharedlib.hardware.abstractions.gimbal.DJIGimbalRoninMXAbstraction;
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:32:  @Key(accessType=8, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=MotorControlPreset.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:36:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:38:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:40:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=DataGimbalGetPushCalibrationStatus.CalibrationStatus.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:44:  @Key(accessType=4, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:54:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:56:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:58:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:60:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:62:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:64:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:66:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:68:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:70:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:72:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:74:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={GimbalMapState.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:76:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Integer.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:81:  @Key(accessType=8, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Number[].class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:83:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:85:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:87:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:91:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:97:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:99:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:101:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:103:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:105:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:107:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:111:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:113:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=DJIGimbalRonin2AxisMode.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:117:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:119:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:121:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:123:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:125:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:127:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:129:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:131:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:133:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:135:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:137:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:139:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:141:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:143:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=DJIGimbalHoldType.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:145:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:147:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:149:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:151:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:153:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:155:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:157:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.DYNAMIC)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:161:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:163:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:165:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:167:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=DataCommonGetPushUpgradeStatus.DJIUpgradeStep.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:169:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=DJIGimbalRonin2WorkMode.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:173:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:179:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:181:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:183:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:185:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:187:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:189:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, types={Boolean.class})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:203:  @Key(accessType=4, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:209:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:211:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Boolean.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:215:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:217:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:219:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:221:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:223:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:225:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Double.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:227:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Double.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:229:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:231:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:233:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:235:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:237:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:239:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:241:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:243:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:245:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:247:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:249:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:251:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:253:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:255:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:257:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:259:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:261:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:263:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:265:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:267:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:269:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:271:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:273:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:275:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:277:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Float.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:279:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:281:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:283:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:285:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:287:  @ComplexKey({@Key(accessType=3, type=Integer.class), @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:291:  @Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:293:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:297:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:299:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:301:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:303:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:307:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:309:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class, DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:311:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class}, type=Boolean.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:313:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class, DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:315:  @Key(accessType=4, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, type=BalanceTestResult.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:317:  @Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:319:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:321:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:323:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:325:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:327:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:329:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:335:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:337:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:341:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:343:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:345:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:347:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:349:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:351:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:353:  @ComplexKey({@Key(accessType=3, type=Boolean.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:355:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:357:  @Key(accessType=4, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, type=BalanceTestResult.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:359:  @Key(accessType=4, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Map.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:360:  public static final String RONIN2_GIMBAL_CAPABILITIES = "Ronin2Capabilities";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:361:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:362:  public static final String RONIN2_MAX_ANGLE_PITCH = "Ronin2MaxAnglePitch";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:363:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:364:  public static final String RONIN2_MAX_ANGLE_ROLL = "Ronin2MaxAngleRoll";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:365:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:366:  public static final String RONIN2_MAX_ANGLE_YAW = "Ronin2MaxAngleYaw";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:367:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:368:  public static final String RONIN2_MIN_ANGLE_PITCH = "Ronin2MinAnglePitch";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:369:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:370:  public static final String RONIN2_MIN_ANGLE_ROLL = "Ronin2MinAngleRoll";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:371:  @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:372:  public static final String RONIN2_MIN_ANGLE_YAW = "Ronin2MinAngleYaw";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:375:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:379:  @Key(accessType=8, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, updateType=DJISDKCacheUpdateType.USER_DRIVEN)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:387:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:389:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:391:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:395:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN), @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:397:  @ComplexKey({@Key(accessType=3, excludedAbstractions={DJIGimbalFoldingDroneAbstraction.class, DJIGimbalSparkAbstraction.class}, type=Integer.class), @Key(accessType=5, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class, updateType=DJISDKCacheUpdateType.USER_DRIVEN)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:401:  @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:405:  @Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:407:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:409:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:411:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:413:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:415:  @Key(accessType=3, includedAbstractions={DJIGimbalRoninMXAbstraction.class}, type=Integer.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:417:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:419:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class, DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:421:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalMobileHandheldAbstraction.class}, type=MovementSettingsProfile.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Boolean.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:423:  @ComplexKey({@Key(accessType=3, includedAbstractions={DJIGimbalHandheldAbstraction.class, DJIGimbalMobileHandheldAbstraction.class, DJIGimbalRoninMXAbstraction.class}, type=Integer.class), @Key(accessType=6, includedAbstractions={DJIGimbalRonin2Abstraction.class}, type=Integer.class)})
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/GimbalKeys.java:425:  @Key(accessType=4, includedAbstractions={DJIGimbalRoninMXAbstraction.class, DJIGimbalRonin2Abstraction.class}, type=BalanceTestResult.class)
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/sdksharedlib/keycatalog/ProductKeys.java:31:  public static final String IS_RONIN = "IsRonin";
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/utils/storage/DJIFolder.java:28:    CUSTOM_3D_LUT = new DJIFolder("CUSTOM_3D_LUT", 3, "package-name", "/DJI-Ronin-UserLut", false);
+/mnt/c/Users/adinb/Desktop/decompiledRoninSource/dji/utils/storage/DJIFolder.java:29:    SHARE_TEMP = new DJIFolder("SHARE_TEMP", 4, "package-name", "/DJI-Ronin-Temp-Files", false);

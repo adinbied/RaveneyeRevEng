@@ -1,0 +1,187 @@
+{
+    "log": {
+        "default_level": "info",
+        "default_channel": "console",
+        "default_mask": "enable_all",
+        "default_format": [
+            "basic"
+        ],
+        "default_module": [
+            "unknow",
+            "osal",
+            "mb",
+            "tm",
+            "event",
+            "sketch",
+            "hal",
+            "wl"
+        ]
+    },
+    "blackbox": {
+        "active"            : 0,
+        "base_dir"          : "/blackbox/misc",
+        "prefix"            : "",
+        "demuxed"           : 0,
+        "file_num_limit"    : 100,
+        "file_max_size_m"   : 2,
+        "space_limit_m"     : 16,
+        "cache_size_m"      : 1,
+        "output_port"       : 8919,
+
+        "channels": [
+            {"name": "duss_file_id",    "active": 0, "id": 0, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16, "self_inc_index" : 1},
+            {"name": "duss_osal_info",  "active": 0, "id": 1, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_mb_msg",     "active": 0, "id": 2, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_tm_msg",     "active": 0, "id": 3, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_mb_rti_msg", "active": 0, "id": 4, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_data_info",  "active": 0, "id": 5, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1}
+        ]
+    },
+    "platform": {
+        "name": "common",
+        "dev_info": "HG702",
+        "hw_str": "UDP AC",
+        "system_init": "sys_platform_common_init",
+        "without_fc": 1,
+        "device_manager": 1
+    },
+    "hal": {
+        "device_list": [
+            {"name": "/dev/ttyGS0",     "attach": "duss_hal_attach_linux_tty",    "detach": "duss_hal_detach_linux_tty"   }
+        ]
+    },
+    "process": {
+        "dji_cfgsrv": {
+            "log": {
+                "default_level": "info",
+                "default_channel": "console",
+                "default_mask": "enable_all",
+                "default_format": [
+                    "basic"
+                ]
+            },
+            "blackbox": {
+                "active"            : 0,
+                "base_dir"          : "/blackbox/dji_cfgsvr",
+                "prefix"            : "",
+                "demuxed"           : 0,
+                "file_num_limit"    : 100,
+                "file_max_size_m"   : 2,
+                "space_limit_m"     : 16,
+                "cache_size_m"      : 1,
+                "output_port"       : 8923
+            }
+        },
+        "dji_mb_ctrl": {
+            "log": {
+                "default_level": "info",
+                "default_channel": "console",
+                "default_mask": "enable_all",
+                "default_format": [
+                    "basic"
+                ]
+            },
+            "blackbox": {
+                "active"            : 0,
+                "base_dir"          : "/blackbox/dji_mb_ctrl",
+                "prefix"            : "",
+                "demuxed"           : 0,
+                "file_num_limit"    : 100,
+                "file_max_size_m"   : 1,
+                "space_limit_m"     : 4,
+                "cache_size_m"      : 1,
+                "output_port"       : 8910
+            }
+        },
+        "test_duml": {
+            "log": {
+                "default_level": "info",
+                "default_channel": "console",
+                "default_mask": "enable_all",
+                "default_format": [
+                    "basic"
+                ]
+            },
+            "blackbox": {
+                "active"            : 0,
+                "base_dir"          : "/blackbox/test_duml",
+                "prefix"            : "",
+                "demuxed"           : 0,
+                "file_num_limit"    : 100,
+                "file_max_size_m"   : 2,
+                "space_limit_m"     : 16,
+                "cache_size_m"      : 1,
+                "output_port"       : 8905
+            }
+        }
+    },
+    "dji_cfgsrv":
+    {
+        "mb_route_table":
+        {
+            "cfgsrv":
+            {
+                "host": "vt_air", "index": 6,
+                "0907": {"status": 1, "target": "vt_air",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0a00": {"status": 1, "target": "pc",      "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0400": {"status": 1, "target": "gimbal",  "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0402": {"status": 1, "target": "gimbal",  "index": 2, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0407": {"status": 1, "target": "gimbal",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0507": {"status": 1, "target": "cboard",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0701": {"status": 1, "target": "network", "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0b00": {"status": 1, "target": "battery", "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1f05": {"status": 1, "target": "all",     "index": 5, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1f06": {"status": 1, "target": "all",     "index": 6, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0601": {"status": 1, "target": "rc",      "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1201": {"status": 1, "target": "bvision", "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1107": {"status": 1, "target": "mvision", "index": 7, "channel": "local", "distance": 0, "protocol": "v1", 
+                        "local": {"direct_host": "mvision", "index": 7}},
+                "0700": {"status": 1, "target": "network", "index": 0, "channel": "local", "distance": 0, "protocol": "v1", 
+                        "local": {"direct_host": "network", "index": 0}},
+                "1e01": {"status": 1, "target": "test",   "index": 1, "channel": "local", "distance": 0, "protocol": "logic",
+                        "local": {"direct_host": "test", "index": 1}},
+                "0200": {"status": 1, "target": "mobile",  "index": 0, "channel": "wl", "distance": 0, "protocol": "v1",
+                        "wl": {"interface": "iwlan0", "local_port": 9004, "remote_address": "0.0.0.0", "remote_port": 0, "server": true,"protocol": "sw_v2_proto", "priority": "HIGHEST", "flags": 1}}
+            }
+        }
+    },
+    "network_service":
+    {
+        "mb_route_table":
+        {
+	          "wms_local":
+            {
+                 "host":"network", "index":0,
+                "0906": {"status": 1, "target": "vt_air", "index": 6, "channel": "local", "distance": 0, "protocol": "v1",
+                        "local": {"direct_host": "vt_air", "index": 6}},
+                "0907": {"status": 1, "target": "vt_air", "index": 7, "channel": "local", "distance": 0, "protocol": "v1",
+                        "local": {"direct_host": "vt_air", "index": 6}},
+                "0200": {"status": 1, "target": "mobile", "index": 0, "channel": "local", "distance": 0, "protocol": "v1",
+                        "local": {"direct_host": "vt_air", "index": 6}},
+                "0701": {"status": 1, "target": "network", "index": 1, "channel": "local", "distance": 0, "protocol": "v1",
+                        "local": {"direct_host": "vt_air", "index": 6}},
+                "0a00": {"status": 1, "target": "pc", "index": 0, "channel": "local", "distance": 0, "protocol": "v1",
+                        "local": {"direct_host": "vt_air", "index": 6}}
+            }
+        }
+    },
+    "test": {
+        "mb_route_table": {
+            "diag": {
+                "host": "test", "index": 1,
+                "0400": {"status": 1, "target": "gimbal",  "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0402": {"status": 1, "target": "gimbal",  "index": 2, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0407": {"status": 1, "target": "gimbal",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0507": {"status": 1, "target": "cboard",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0700": {"status": 1, "target": "network", "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0701": {"status": 1, "target": "network", "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0b00": {"status": 1, "target": "battery", "index": 0, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1f05": {"status": 1, "target": "all",     "index": 5, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0601": {"status": 1, "target": "rc",      "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "1201": {"status": 1, "target": "bvision", "index": 1, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0907": {"status": 1, "target": "vt_air",  "index": 7, "channel": "spi", "distance": 0, "protocol": "v1", "spi": {"interface": "/dev/spidevx.0", "baudrate": 0, "lsb_first": 0, "bits_per_word": 8}},
+                "0906": {"status": 1, "target": "vt_air",  "index": 6, "channel": "local", "distance": 0, "protocol": "logic", "local": {"direct_host": "vt_air", "index": 6}}
+            }
+        }
+    }
+}

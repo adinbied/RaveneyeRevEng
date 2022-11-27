@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# Start mdev....
+#
+modprobe rfkill 2> /dev/null
+modprobe cfg80211 ieee80211_regdom="US" 2> /dev/null
+modprobe ehci_ambarella > /dev/null
+
+case "$1" in
+  start)
+	echo "Starting mdev..."
+	echo /sbin/mdev >/proc/sys/kernel/hotplug
+	/sbin/mdev -s
+	dji_wms_hg702 &
+	# coldplug modules
+	# find /sys/ -name modalias -print0 | xargs -0 sort -u -z | xargs -0 modprobe -abq
+	;;
+  stop)
+	;;
+  restart|reload)
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?

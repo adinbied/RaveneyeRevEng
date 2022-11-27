@@ -1,0 +1,265 @@
+Oct 16 19:47:51 kernel: klogd started: BusyBox v1.25.0 (2021-01-15 14:17:21 CST)
+Oct 16 19:47:51 kernel: [    0.000000] Booting Linux on physical CPU 0x3
+Oct 16 19:47:51 kernel: [    0.000000] Linux version 4.9.0 (jenkins@jenkins-slave-4dmzj) (gcc version 5.3.1 20160113 (Linaro GCC 5.3-2016.02) ) #1 SMP PREEMPT Fri Jan 15 14:27:38 CST 2021
+Oct 16 19:47:51 kernel: [    0.000000] Boot CPU: AArch64 Processor [410fd034]
+Oct 16 19:47:51 kernel: [    0.000000] cma: Reserved 16 MiB at 0x000000000f000000
+Oct 16 19:47:51 kernel: [    0.000000] On node 0 totalpages: 31232
+Oct 16 19:47:51 kernel: [    0.000000]   DMA zone: 488 pages used for memmap
+Oct 16 19:47:51 kernel: [    0.000000]   DMA zone: 0 pages reserved
+Oct 16 19:47:51 kernel: [    0.000000]   DMA zone: 31232 pages, LIFO batch:7
+Oct 16 19:47:51 kernel: [    0.000000] psci: probing for conduit method from DT.
+Oct 16 19:47:51 kernel: [    0.000000] psci: PSCIv1.0 detected in firmware.
+Oct 16 19:47:51 kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Oct 16 19:47:51 kernel: [    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+Oct 16 19:47:51 kernel: [    0.000000] percpu: Embedded 19 pages/cpu @ffffffc00ef86000 s40192 r8192 d29440 u77824
+Oct 16 19:47:51 kernel: [    0.000000] pcpu-alloc: s40192 r8192 d29440 u77824 alloc=19*4096
+Oct 16 19:47:51 kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Oct 16 19:47:51 kernel: [    0.000000] Detected VIPT I-cache on CPU0
+Oct 16 19:47:51 kernel: [    0.000000] CPU features: enabling workaround for ARM erratum 845719
+Oct 16 19:47:51 kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 30744
+Oct 16 19:47:51 kernel: [    0.000000] Kernel command line: root=/dev/mtdblock5 rootfstype=squashfs console=ttyS1 nr_cpus=4 maxcpus=4 swiotlb=1024 sec=0x6c25660
+Oct 16 19:47:51 kernel: [    0.000000] PID hash table entries: 512 (order: 0, 4096 bytes)
+Oct 16 19:47:51 kernel: [    0.000000] Dentry cache hash table entries: 16384 (order: 5, 131072 bytes)
+Oct 16 19:47:51 kernel: [    0.000000] Inode-cache hash table entries: 8192 (order: 4, 65536 bytes)
+Oct 16 19:47:51 kernel: [    0.000000] Memory: 84472K/124928K available (4542K kernel code, 442K rwdata, 1336K rodata, 320K init, 245K bss, 24072K reserved, 16384K cma-reserved)
+Oct 16 19:47:51 kernel: [    0.000000] Virtual kernel memory layout:
+Oct 16 19:47:51 kernel: [    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+Oct 16 19:47:51 kernel: [    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+Oct 16 19:47:51 kernel: [    0.000000]       .text : 0xffffff8008080000 - 0xffffff80084f0000   (  4544 KB)
+Oct 16 19:47:51 kernel: [    0.000000]     .rodata : 0xffffff80084f0000 - 0xffffff8008650000   (  1408 KB)
+Oct 16 19:47:51 kernel: [    0.000000]       .init : 0xffffff8008650000 - 0xffffff80086a0000   (   320 KB)
+Oct 16 19:47:51 kernel: [    0.000000]       .data : 0xffffff80086a0000 - 0xffffff800870e808   (   443 KB)
+Oct 16 19:47:51 kernel: [    0.000000]        .bss : 0xffffff800870e808 - 0xffffff800874bc18   (   246 KB)
+Oct 16 19:47:51 kernel: [    0.000000]     fixed   : 0xffffffbefe7fd000 - 0xffffffbefec00000   (  4108 KB)
+Oct 16 19:47:51 kernel: [    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+Oct 16 19:47:51 kernel: [    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+Oct 16 19:47:51 kernel: [    0.000000]               0xffffffbf00218000 - 0xffffffbf00400000   (     1 MB actual)
+Oct 16 19:47:51 kernel: [    0.000000]     memory  : 0xffffffc008600000 - 0xffffffc010000000   (   122 MB)
+Oct 16 19:47:51 kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Oct 16 19:47:51 kernel: [    0.000000] Preemptible hierarchical RCU implementation.
+Oct 16 19:47:51 kernel: [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+Oct 16 19:47:51 kernel: [    0.000000] NR_IRQS:64 nr_irqs:64 0
+Oct 16 19:47:51 kernel: [    0.000000] CPU features: GIC system register CPU interface present but disabled by higher exception level
+Oct 16 19:47:51 kernel: [    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 51.00MHz (virt).
+Oct 16 19:47:51 kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xbc31d0f18, max_idle_ns: 440795202667 ns
+Oct 16 19:47:51 kernel: [    0.000005] sched_clock: 56 bits at 51MHz, resolution 19ns, wraps every 4398046511098ns
+Oct 16 19:47:51 kernel: [    0.000217] Console: colour dummy device 80x25
+Oct 16 19:47:51 kernel: [    0.000307] Calibrating delay loop (skipped), value calculated using timer frequency.. 102.00 BogoMIPS (lpj=204000)
+Oct 16 19:47:51 kernel: [    0.000319] pid_max: default: 32768 minimum: 301
+Oct 16 19:47:51 kernel: [    0.000401] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+Oct 16 19:47:51 kernel: [    0.000409] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)
+Oct 16 19:47:51 kernel: [    0.001194] ASID allocator initialised with 65536 entries
+Oct 16 19:47:51 kernel: [    0.068160] psci: failed to boot CPU1 (-22)
+Oct 16 19:47:51 kernel: [    0.068176] CPU1: failed to boot: -22
+Oct 16 19:47:51 kernel: [    0.068186] CPU1: failed in unknown state : 0x0
+Oct 16 19:47:51 kernel: [    0.096262] Detected VIPT I-cache on CPU2
+Oct 16 19:47:51 kernel: [    0.096311] CPU2: Booted secondary processor [410fd034]
+Oct 16 19:47:51 kernel: [    0.124328] Detected VIPT I-cache on CPU3
+Oct 16 19:47:51 kernel: [    0.124363] CPU3: Booted secondary processor [410fd034]
+Oct 16 19:47:51 kernel: [    0.124435] Brought up 3 CPUs
+Oct 16 19:47:51 kernel: [    0.124460] SMP: Total of 3 processors activated.
+Oct 16 19:47:51 kernel: [    0.124473] CPU features: detected feature: 32-bit EL0 Support
+Oct 16 19:47:51 kernel: [    0.124530] CPU: All CPU(s) started at EL1
+Oct 16 19:47:51 kernel: [    0.124555] alternatives: patching kernel code
+Oct 16 19:47:51 kernel: [    0.125210] devtmpfs: initialized
+Oct 16 19:47:51 kernel: [    0.134151] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct 16 19:47:51 kernel: [    0.134751] pinctrl core: initialized pinctrl subsystem
+Oct 16 19:47:51 kernel: [    0.134990] ambalink ppm2 memory (rtos region): 0x00020000 - 0x08000000 (0xffffffc000020000)
+Oct 16 19:47:51 kernel: [    0.135008] ambalink shm (shared memory): 0x08000000 - 0x08600000 (0xffffffc008000000)
+Oct 16 19:47:51 kernel: [    0.135504] NET: Registered protocol family 16
+Oct 16 19:47:51 kernel: [    0.136489] vdso: 2 pages (1 code @ ffffff80084f7000, 1 data @ ffffff80086a5000)
+Oct 16 19:47:51 kernel: [    0.137756] DMA: preallocated 256 KiB pool for atomic allocations
+Oct 16 19:47:51 kernel: [    0.141226] ambarella-pinctrl e8009000.pinctrl: Ambarella pinctrl driver registered
+Oct 16 19:47:51 kernel: [    0.142518] ambarella-gpio e8009000.pinctrl:gpio@0: Ambarella GPIO driver registered
+Oct 16 19:47:51 kernel: [    0.153329] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+Oct 16 19:47:51 kernel: [    0.153732] aipc_spin_lock_setup: aipc_slock@0xffffffc008446000
+Oct 16 19:47:51 kernel: [    0.153958] aipc_mutex_of_init: aipc_mutex@0xffffffc008447000
+Oct 16 19:47:51 kernel: [    0.154482] usbcore: registered new interface driver usbfs
+Oct 16 19:47:51 kernel: [    0.154555] usbcore: registered new interface driver hub
+Oct 16 19:47:51 kernel: [    0.154661] usbcore: registered new device driver usb
+Oct 16 19:47:51 kernel: [    0.155032] ambarella-rproc ambalink:ambarella-rproc: ambarella_rproc_probe device registered
+Oct 16 19:47:51 kernel: [    0.155249]  remoteproc0: ambarella is available
+Oct 16 19:47:51 kernel: [    0.155260]  remoteproc0: Note: remoteproc is still under development and considered experimental.
+Oct 16 19:47:51 kernel: [    0.155270]  remoteproc0: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+Oct 16 19:47:51 kernel: [    0.155282]  remoteproc0: powering up ambarella
+Oct 16 19:47:51 kernel: [    0.155294]  remoteproc0: Booting fw image dummy, size 0
+Oct 16 19:47:51 kernel: [    0.155444]  remoteproc0: registered virtio0 (type 7)
+Oct 16 19:47:51 kernel: [    0.155457]  remoteproc0: remote processor ambarella is now up
+Oct 16 19:47:51 kernel: [    0.155921] virtio_rpmsg_bus virtio0: rpmsg host is online
+Oct 16 19:47:51 kernel: [    0.156378] virtio_rpmsg_bus virtio0: creating channel AmbaRpdev_CLK addr 0x400
+Oct 16 19:47:51 kernel: [    0.157387] clocksource: Switched to clocksource arch_sys_counter
+Oct 16 19:47:51 kernel: [    0.157924] virtio_rpmsg_bus virtio0: creating channel aipc_rpc addr 0x401
+Oct 16 19:47:51 kernel: [    0.167818] NET: Registered protocol family 2
+Oct 16 19:47:51 kernel: [    0.168425] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+Oct 16 19:47:51 kernel: [    0.168453] TCP bind hash table entries: 1024 (order: 2, 16384 bytes)
+Oct 16 19:47:51 kernel: [    0.168484] TCP: Hash tables configured (established 1024 bind 1024)
+Oct 16 19:47:51 kernel: [    0.168552] UDP hash table entries: 256 (order: 1, 8192 bytes)
+Oct 16 19:47:51 kernel: [    0.168577] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+Oct 16 19:47:51 kernel: [    0.168752] NET: Registered protocol family 1
+Oct 16 19:47:51 kernel: [    0.169208] RPC: Registered named UNIX socket transport module.
+Oct 16 19:47:51 kernel: [    0.169217] RPC: Registered udp transport module.
+Oct 16 19:47:51 kernel: [    0.169224] RPC: Registered tcp transport module.
+Oct 16 19:47:51 kernel: [    0.169230] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Oct 16 19:47:51 kernel: [    0.172397] futex hash table entries: 1024 (order: 5, 131072 bytes)
+Oct 16 19:47:51 kernel: [    0.172801] workingset: timestamp_bits=62 max_order=15 bucket_order=0
+Oct 16 19:47:51 kernel: [    0.183062] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 16 19:47:51 kernel: [    0.186760] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Oct 16 19:47:51 kernel: [    0.186779] io scheduler noop registered
+Oct 16 19:47:51 kernel: [    0.186790] io scheduler deadline registered
+Oct 16 19:47:51 kernel: [    0.186982] io scheduler cfq registered (default)
+Oct 16 19:47:51 kernel: [    0.187089] Registering the rpc profile device successfully with 250
+Oct 16 19:47:51 kernel: [    0.187517] virtio_rpmsg_bus virtio0: creating channel aipc_vfs addr 0x402
+Oct 16 19:47:51 kernel: [    0.187743] virtio_rpmsg_bus virtio0: creating channel aipc_rfs addr 0x403
+Oct 16 19:47:51 kernel: [    0.187915] virtio_rpmsg_bus virtio0: creating channel link_ctrl addr 0x404
+Oct 16 19:47:51 kernel: [    0.188147] virtio_rpmsg_bus virtio0: creating channel echo_cortex addr 0x405
+Oct 16 19:47:51 kernel: [    0.188898] e0032000.uart: ttyS1 at MMIO 0xe0032000 (irq = 21, base_baud = 1500000) is a ambuart
+Oct 16 19:47:51 kernel: [    0.873087] console [ttyS1] enabled
+Oct 16 19:47:51 kernel: [    0.877081] e0033000.uart: ttyS2 at MMIO 0xe0033000 (irq = 22, base_baud = 1500000) is a ambuart
+Oct 16 19:47:51 kernel: [    0.886369] Unable to detect cache hierarchy from DT for CPU 0
+Oct 16 19:47:51 kernel: [    0.893050]  ram0: unable to read partition table
+Oct 16 19:47:51 kernel: [    0.898006] brd: module loaded
+Oct 16 19:47:51 kernel: [    0.907801] loop: module loaded
+Oct 16 19:47:51 kernel: [    0.911324] Probe amba_heapmem ok
+Oct 16 19:47:51 kernel: [    0.914938] Probe amba_dspmem successfully
+Oct 16 19:47:51 kernel: [    0.919257] Ambarella read-only mtdblock
+Oct 16 19:47:51 kernel: [    0.957556] ambarella-nand e0001000.nand: in ecc-[8]bit mode
+Oct 16 19:47:51 kernel: [    0.963267] nand: device found, Manufacturer ID: 0x98, Chip ID: 0xda
+Oct 16 19:47:51 kernel: [    0.969611] nand: Toshiba TC58NVG1S3H 2G 3.3V 8-bit
+Oct 16 19:47:51 kernel: [    0.974481] nand: 256 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 128
+Oct 16 19:47:51 kernel: [    0.982342] Bad block table found at page 131008, version 0x01
+Oct 16 19:47:51 kernel: [    0.988317] Bad block table found at page 130944, version 0x01
+Oct 16 19:47:51 kernel: [    0.994311] nand_read_bbt: bad block at 0x00000c000000
+Oct 16 19:47:51 kernel: [    0.999440] nand_read_bbt: bad block at 0x00000c020000
+Oct 16 19:47:51 kernel: [    1.004787] 18 ofpart partitions found on MTD device amba_nand
+Oct 16 19:47:51 kernel: [    1.010611] Creating 18 MTD partitions on "amba_nand":
+Oct 16 19:47:51 kernel: [    1.015743] 0x000000020000-0x000000040000 : "VENDOR_DATA"
+Oct 16 19:47:51 kernel: [    1.022399] 0x000000280000-0x000001680000 : "SYS_SW"
+Oct 16 19:47:51 kernel: [    1.029037] 0x000001680000-0x000001c80000 : "DSP_uCode"
+Oct 16 19:47:51 kernel: [    1.035554] 0x000001c80000-0x000003480000 : "SYS_DATA"
+Oct 16 19:47:51 kernel: [    1.042465] 0x000003480000-0x000003e80000 : "LINUX_Kernel"
+Oct 16 19:47:51 kernel: [    1.049341] 0x000003e80000-0x000005c80000 : "LINUX_RFS"
+Oct 16 19:47:51 kernel: [    1.056477] 0x000005c80000-0x000007880000 : "LINUX_HIBER_IMG"
+Oct 16 19:47:51 kernel: [    1.064066] 0x000007880000-0x000008600000 : "VIDEO_REC_IDX"
+Oct 16 19:47:51 kernel: [    1.071180] 0x000008600000-0x000008880000 : "CALIB"
+Oct 16 19:47:51 kernel: [    1.077245] 0x000008880000-0x000008a40000 : "USER_SETTING"
+Oct 16 19:47:51 kernel: [    1.083902] 0x000008a40000-0x0000090c0000 : "DRIVE_A"
+Oct 16 19:47:51 kernel: [    1.090295] 0x0000090c0000-0x000009740000 : "DRIVE_B"
+Oct 16 19:47:51 kernel: [    1.096655] 0x000009740000-0x000009760000 : "RSVD"
+Oct 16 19:47:51 kernel: [    1.102611] 0x000009760000-0x00000ab60000 : "SYS_SW_BK"
+Oct 16 19:47:51 kernel: [    1.109511] 0x00000ab60000-0x00000b160000 : "DSP_uCode_BK"
+Oct 16 19:47:51 kernel: [    1.116259] 0x00000b160000-0x00000c9a0000 : "SYS_DATA_BK"
+Oct 16 19:47:51 kernel: [    1.123398] 0x00000c9a0000-0x00000d3a0000 : "LINUX_Kernel_BK"
+Oct 16 19:47:51 kernel: [    1.130545] 0x00000d3a0000-0x00000f1a0000 : "LINUX_RFS_BK"
+Oct 16 19:47:51 kernel: [    1.138747] ambarella-spi e0020000.spi: registered master spi0
+Oct 16 19:47:51 kernel: [    1.138920] spi spi0.0: setup mode 3, 8 bits/w, 2000000 Hz max --> 0
+Oct 16 19:47:51 kernel: [    1.139380] ambarella-spi e0020000.spi: registered child spi0.0
+Oct 16 19:47:51 kernel: [    1.139391] ambarella-spi e0020000.spi: Ambarella spi controller 0 created.^M
+Oct 16 19:47:51 kernel: [    1.146760] libphy: Fixed MDIO Bus: probed
+Oct 16 19:47:51 kernel: [    1.151295] ambarella-rtc e8015000.rtc: rtc core: registered e8015000.rtc as rtc0
+Oct 16 19:47:51 kernel: [    1.158777] ambarella-rtc e8015000.rtc: Warning: RTC lost power.....
+Oct 16 19:47:51 kernel: [    1.165121] ambarella-rtc e8015000.rtc: ambrtc_set_mmss is not supported in dual-OSes!
+Oct 16 19:47:51 kernel: [    1.173710] virtio_rpmsg_bus virtio0: creating channel dji_usr addr 0x406
+Oct 16 19:47:51 kernel: [    1.181649] ambarella-adc e801d000.adc: 4 channels
+Oct 16 19:47:51 kernel: [    1.186755] Initializing XFRM netlink socket
+Oct 16 19:47:51 kernel: [    1.191040] NET: Registered protocol family 17
+Oct 16 19:47:51 kernel: [    1.195509] Key type dns_resolver registered
+Oct 16 19:47:51 kernel: [    1.203561] console [netcon0] enabled
+Oct 16 19:47:51 kernel: [    1.207244] netconsole: network logging started
+Oct 16 19:47:51 kernel: [    1.211835] ambarella-rtc e8015000.rtc: setting system clock to 1984-10-16 19:47:51 UTC (466804071)
+Oct 16 19:47:51 kernel: [    1.223293] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+Oct 16 19:47:51 kernel: [    1.231754] devtmpfs: mounted
+Oct 16 19:47:51 kernel: [    1.235065] Freeing unused kernel memory: 320K (ffffffc008c50000 - ffffffc008ca0000)
+Oct 16 19:47:51 kernel: [    1.267752] random: fast init done
+Oct 16 19:47:51 kernel: [    1.305281] ambarella-nand e0001000.nand: BCH correct [1]bit in block[548]
+Oct 16 19:47:51 kernel: [    1.444011] ambarella-nand e0001000.nand: BCH correct [1]bit in block[630]
+Oct 16 19:47:51 kernel: [    1.490593] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct 16 19:47:51 kernel: [    1.500362] ehci-ambarella: AMBARELLA-EHCI Host Controller driver
+Oct 16 19:47:51 kernel: [    1.507704] ambarella-ehci e0018000.ehci: EHCI Host Controller
+Oct 16 19:47:51 kernel: [    1.513560] ambarella-ehci e0018000.ehci: new USB bus registered, assigned bus number 1
+Oct 16 19:47:51 kernel: [    1.521908] ambarella-ehci e0018000.ehci: irq 24, io mem 0xe0018000
+Oct 16 19:47:51 kernel: [    1.541391] ambarella-ehci e0018000.ehci: USB 2.0 started, EHCI 1.00
+Oct 16 19:47:51 kernel: [    1.548007] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Oct 16 19:47:51 kernel: [    1.554795] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 16 19:47:51 kernel: [    1.562008] usb usb1: Product: EHCI Host Controller
+Oct 16 19:47:51 kernel: [    1.566879] usb usb1: Manufacturer: Linux 4.9.0 ehci_hcd
+Oct 16 19:47:51 kernel: [    1.572183] usb usb1: SerialNumber: AmbUSB
+Oct 16 19:47:51 kernel: [    1.576981] hub 1-0:1.0: USB hub found
+Oct 16 19:47:51 kernel: [    1.580766] hub 1-0:1.0: 1 port detected
+Oct 16 19:47:51 kernel: [    1.909413] usb 1-1: new high-speed USB device number 2 using ambarella-ehci
+Oct 16 19:47:51 kernel: [    1.983537] dji_imc: loading out-of-tree module taints kernel.
+Oct 16 19:47:51 kernel: [    1.994939] IMC_Rpmsg_Init, success
+Oct 16 19:47:51 kernel: [    1.994939] 
+Oct 16 19:47:51 kernel: [    2.006964] rpmsg chn dji_usr probed
+Oct 16 19:47:51 kernel: [    2.006964] 
+Oct 16 19:47:51 kernel: [    2.012727] virtio_rpmsg_bus virtio0: creating channel dji_drv addr 0x407
+Oct 16 19:47:51 kernel: [    2.023753] IMC_Netlink_SockInit: success
+Oct 16 19:47:51 kernel: [    2.023753] 
+Oct 16 19:47:51 kernel: [    2.046811] rpmsg chn dji_drv probed
+Oct 16 19:47:51 kernel: [    2.046811] 
+Oct 16 19:47:51 kernel: [    2.066868] usb 1-1: New USB device found, idVendor=05e3, idProduct=0608
+Oct 16 19:47:51 kernel: [    2.074811] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+Oct 16 19:47:51 kernel: [    2.082822] usb 1-1: Product: USB2.0 Hub
+Oct 16 19:47:51 kernel: [    2.089018] hub 1-1:1.0: USB hub found
+Oct 16 19:47:51 kernel: [    2.096595] hub 1-1:1.0: 4 ports detected
+Oct 16 19:47:51 kernel: [    2.117843] spidev spi0.0: setup mode 3, 8 bits/w, 2000000 Hz max --> 0
+Oct 16 19:47:51 kernel: [    2.117857] spidev spi0.0: spi mode 3
+Oct 16 19:47:51 kernel: [    2.117875] spidev spi0.0: setup mode 3, 8 bits/w, 2000000 Hz max --> 0
+Oct 16 19:47:51 kernel: [    2.117883] spidev spi0.0: 8 bits per word
+Oct 16 19:47:51 kernel: [    2.117899] spidev spi0.0: setup mode 3, 8 bits/w, 2000000 Hz max --> 0
+Oct 16 19:47:51 kernel: [    2.202468] ambarella-nand e0001000.nand: BCH correct [1]bit in block[606]
+Oct 16 19:47:51 kernel: [    2.375559] usbcore: registered new interface driver rtl88x2cu
+Oct 16 19:47:51 kernel: [    2.397464] usb 1-1.2: new high-speed USB device number 3 using ambarella-ehci
+Oct 16 19:47:51 kernel: [    2.514346] usb 1-1.2: New USB device found, idVendor=0bda, idProduct=c82c
+Oct 16 19:47:51 kernel: [    2.521270] usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Oct 16 19:47:51 kernel: [    2.530019] usb 1-1.2: Product: 802.11ac NIC
+Oct 16 19:47:51 kernel: [    2.535232] usb 1-1.2: Manufacturer: Realtek
+Oct 16 19:47:51 kernel: [    2.539909] usb 1-1.2: SerialNumber: 123456
+Oct 16 19:47:52 kernel: [    3.365718] random: crng init done
+Oct 16 19:47:53 kernel: [    4.047578] ambarella-nand e0001000.nand: BCH correct [1]bit in block[530]
+Oct 16 19:47:53 kernel: [    4.109048] ambarella-nand e0001000.nand: BCH correct [1]bit in block[533]
+Oct 16 19:47:54 kernel: [    5.103458] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:47:55 kernel: [    6.158362] =======pregistrypriv->wmm_enable=1============
+Oct 16 19:48:25 kernel: [   36.009588] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:03 kernel: [   74.495083] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:18 kernel: [   88.800335] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:30 kernel: [  101.004208] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:42 kernel: [  113.265959] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:47 kernel: [  117.773462] ============ STA [70:9c:d1:4f:92:be]  ===================
+Oct 16 19:49:47 kernel: [  117.779949] mac_id : 2
+Oct 16 19:49:47 kernel: [  117.782632] wireless_mode : 0x04
+Oct 16 19:49:47 kernel: [  117.786058] mimo_type : 2
+Oct 16 19:49:47 kernel: [  117.788665] static smps : N
+Oct 16 19:49:47 kernel: [  117.791650] bw_mode : 20MHz, ra_bw_mode : 20MHz
+Oct 16 19:49:47 kernel: [  117.796391] rate_id : 7
+Oct 16 19:49:47 kernel: [  117.799033] rssi : -1 (%), rssi_level : 0
+Oct 16 19:49:47 kernel: [  117.803294] is_support_sgi : N, is_vht_enable : N
+Oct 16 19:49:47 kernel: [  117.808471] disable_ra : N, disable_pt : N
+Oct 16 19:49:47 kernel: [  117.812866] is_noisy : N
+Oct 16 19:49:47 kernel: [  117.815431] txrx_state : 0
+Oct 16 19:49:47 kernel: [  117.818143] curr_tx_rate : CCK_1M (L)
+Oct 16 19:49:47 kernel: [  117.821873] curr_tx_bw : 20MHz
+Oct 16 19:49:47 kernel: [  117.824912] curr_retry_ratio : 0
+Oct 16 19:49:47 kernel: [  117.828163] ra_mask : 0x0000000000000ff0
+Oct 16 19:49:47 kernel: [  117.828163] 
+Oct 16 19:49:47 kernel: [  117.836855] send eapol packet 1/4
+Oct 16 19:49:47 kernel: [  117.842653] recv eapol packet 2/4
+Oct 16 19:49:47 kernel: [  117.846808] send eapol packet 3/4
+Oct 16 19:49:47 kernel: [  117.872298] recv eapol packet 4/4
+Oct 16 19:49:51 dnsmasq: /tmp/wifi_connected_hook.sh 192.168.2.164 70:9c:d1:4f:92:be DESKTOP-OEAV45S
+Oct 16 19:57:55 kernel: [  606.165859] send eapol packet - WPA Group Key 1/2
+Oct 16 19:57:55 kernel: [  606.172140] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:07:55 kernel: [ 1206.178333] send eapol packet - WPA Group Key 1/2
+Oct 16 20:07:55 kernel: [ 1206.184669] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:17:55 kernel: [ 1806.189839] send eapol packet - WPA Group Key 1/2
+Oct 16 20:17:55 kernel: [ 1806.196139] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:27:55 kernel: [ 2406.202108] send eapol packet - WPA Group Key 1/2
+Oct 16 20:27:55 kernel: [ 2406.208520] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:37:55 kernel: [ 3006.214001] send eapol packet - WPA Group Key 1/2
+Oct 16 20:37:55 kernel: [ 3006.220627] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:47:55 kernel: [ 3606.225954] send eapol packet - WPA Group Key 1/2
+Oct 16 20:47:55 kernel: [ 3606.232264] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:57:55 kernel: [ 4206.238052] send eapol packet - WPA Group Key 1/2
+Oct 16 20:57:55 kernel: [ 4206.243988] recv eapol packet - WPA Group Key 2/2
+Oct 16 21:07:55 kernel: [ 4806.246153] send eapol packet - WPA Group Key 1/2
+Oct 16 21:07:55 kernel: [ 4806.252497] recv eapol packet - WPA Group Key 2/2
+Oct 16 21:15:50 kernel: [ 5281.108134] start_readdir nodev

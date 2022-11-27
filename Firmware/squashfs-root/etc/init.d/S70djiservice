@@ -1,0 +1,80 @@
+#!/bin/sh
+
+echo 'S70djiservice is running...'
+ulimit -c unlimited
+echo 1 > /proc/sys/kernel/core_uses_pid
+echo "/tmp/core-%e-%s-%u-%g-%p-%t" > /proc/sys/kernel/core_pattern
+
+insmod /usr/lib/modules/dji_imc.ko
+
+# camera control gpio
+# shutter gpio
+echo 5 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio5/direction
+echo 0 >  /sys/class/gpio/gpio5/value
+# focus gpio
+echo 6 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio6/direction
+echo 1 >  /sys/class/gpio/gpio6/value
+# select gpio
+echo 15 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio15/direction
+echo 1 >  /sys/class/gpio/gpio15/value
+# vbus gpio
+echo 66 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio66/direction
+echo 1 >  /sys/class/gpio/gpio66/value
+
+# Tracking LED gpio
+echo 19 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio19/direction
+echo 1 >  /sys/class/gpio/gpio19/value
+
+# System LED
+# LED R
+echo 49 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio49/direction
+echo 0 >  /sys/class/gpio/gpio49/value
+# LED G
+echo 50 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio50/direction
+echo 1 >  /sys/class/gpio/gpio50/value
+# LED B
+echo 56 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio56/direction
+echo 1 >  /sys/class/gpio/gpio56/value
+
+# HDMI HPD Control
+echo 64 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio64/direction
+echo 1 >  /sys/class/gpio/gpio64/value
+
+# camera control uart setting
+stty -F /dev/ttyS2 speed 9600
+
+# SPI Link IO Control. H22 GPIO_2 as output high, H22 GPIO_4 as input
+echo 2 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio2/direction
+echo 1 > /sys/class/gpio/gpio2/value
+echo 4 > /sys/class/gpio/export
+
+# spi link service
+if [ -x /usr/local/bin/dji_spilink ];then
+    /usr/local/bin/dji_spilink &
+fi
+
+CMDLINE=$(cat /proc/cmdline)
+SEC_ADDR=${CMDLINE#*sec=}
+/usr/bin/dji_precfg ${SEC_ADDR}
+lzma -d /tmp/dji_cfgsrv.lzma
+chmod 755 /tmp/dji_cfgsrv
+/tmp/dji_cfgsrv &
+#/usr/bin/dji_camsrv &
+#sleep 5
+/usr/bin/usb_conn_svr &
+
+uavmonitor &
+#sh /usr/bin/test.sh &
+
+sh /usr/local/share/script/wifi_driver_check.sh &
+exit 0

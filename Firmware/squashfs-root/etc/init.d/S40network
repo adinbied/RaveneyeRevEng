@@ -1,0 +1,37 @@
+#!/bin/sh
+#
+# Start the network....
+#
+
+# Debian ifupdown needs the /run/network lock directory
+# modprobe ehci-ambarella
+# echo host > /proc/ambarella/usbphy0
+# modprobe rfkill 2> /dev/null
+# modprobe cfg80211 ieee80211_regdom="US" 2> /dev/null
+# modprobe usb_common 2> /dev/null
+# modprobe usbcore 2> /dev/null
+
+mkdir -p /run/network
+case "$1" in
+  start)
+	printf "Starting network: "
+	#iw dev wlan0 scan freq 2412 2417 2422 2427 2432 2437 2442 2447 >> /dev/null
+	#iw dev wlan0 scan trigger freq 2452 2457 2462 5745 5765 5785 5805 5825
+	/sbin/ifup -a
+	;;
+  stop)
+	printf "Stopping network: "
+	/sbin/ifdown -a
+	[ $? = 0 ] && echo "OK" || echo "FAIL"
+	;;
+  restart|reload)
+	"$0" stop
+	"$0" start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
+

@@ -1,0 +1,25 @@
+package com.huawei.hms.support.api.game;
+
+import com.huawei.hms.support.api.client.Result;
+
+public class PlayerCertificationInfo
+  extends Result
+{
+  private int a;
+  
+  public int hasAdault()
+  {
+    return this.a;
+  }
+  
+  public void setIsAdault(int paramInt)
+  {
+    this.a = paramInt;
+  }
+}
+
+
+/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\huawei\hms\support\api\game\PlayerCertificationInfo.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

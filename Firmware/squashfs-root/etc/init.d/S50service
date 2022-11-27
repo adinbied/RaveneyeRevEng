@@ -1,0 +1,83 @@
+#!/bin/sh
+
+. /usr/local/share/script/sync_rtc.sh
+
+mkdir -p /tmp/lib /tmp/run /tmp/disk /tmp/log /tmp/ppp
+mkdir -p /tmp/fuse /tmp/FL0 /tmp/SD0
+
+# /tmp/ftp/upload is for FTP upload, /tmp/ftp is for FTP download
+mkdir -p /tmp/ftp/upload
+chmod 755 /tmp/ftp
+chmod 777 /tmp/ftp/upload
+
+#for dnsmasq.leases
+mkdir -p /var/lib/misc
+
+#/dev/random does not work
+ln -sf /dev/urandom /dev/random
+
+ln -sf /etc/resolv.conf /etc/ppp/resolv.conf
+
+# insmod amba vitual file system
+# kernel_ver=$(uname -r)
+# insmod lib/modules/$kernel_ver/kernel/fs/ambavfs/ambavfs.ko
+
+mount -t ambafs a: /tmp/FL0
+mount -t ambafs d: /tmp/SD0
+
+#enable ipcbind and util_svc daemon
+if [ -x /usr/bin/ipcbind ]; then
+	/usr/bin/ipcbind -b
+	if [ -x /usr/bin/util_svc ]; then
+		/usr/bin/util_svc -b
+	fi
+
+	if [ -x /usr/bin/camctrlserver ]; then
+		/usr/bin/camctrlserver
+	fi
+fi
+
+#Enable Linux RPC Binder and Amba background Daemons.
+if [ -x /usr/bin/rpcbind ]; then
+	/usr/bin/rpcbind
+
+#AmbaNetfifo Daemon
+	if [ -x /usr/bin/AmbaNetFifoDaemon ]; then
+		/usr/bin/AmbaNetFifoDaemon
+	else
+		echo 'Warning: "AmbaNetFifoDaemon" is not available!'
+	fi
+
+#AmbaEventNotify Daemon
+	if [ -x /usr/bin/AmbaEventNotifyDaemon ]; then
+		/usr/bin/AmbaEventNotifyDaemon
+	else
+		echo 'Warning: "AmbaEventNotifyDaemon" is not available!'
+	fi
+
+else
+	echo 'Warning: "rpcbind" is not available!'
+fi
+
+#for bootup speed, some modules are preloaded before hibernate
+if [ -x /usr/local/share/script/preload.sh ]; then
+	/usr/local/share/script/preload.sh
+fi
+
+if [ -x /usr/local/share/script/bt_preload.sh ]; then
+	/usr/local/share/script/bt_preload.sh
+fi
+
+#for ar6004 WoWLAN
+mount -t debugfs none /sys/kernel/debug/
+
+#login telnet by 'default'
+#buildroot will install S50telnet
+#telnetd
+
+#syslog
+syslogd -b 2 -s 500 -S
+klogd
+
+#install ambacv module
+insmod /lib/modules/4.9.0\+/kernel/drivers/ambacv/ambacv.ko 2>/dev/null

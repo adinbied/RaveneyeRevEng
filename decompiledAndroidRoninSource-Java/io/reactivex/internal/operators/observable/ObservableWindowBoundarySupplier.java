@@ -1,0 +1,219 @@
+package io.reactivex.internal.operators.observable;
+
+import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.internal.queue.MpscLinkedQueue;
+import io.reactivex.internal.util.AtomicThrowable;
+import io.reactivex.observers.DisposableObserver;
+import io.reactivex.subjects.UnicastSubject;
+import java.util.concurrent.Callable;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
+
+public final class ObservableWindowBoundarySupplier<T, B>
+  extends AbstractObservableWithUpstream<T, Observable<T>>
+{
+  final int capacityHint;
+  final Callable<? extends ObservableSource<B>> other;
+  
+  public ObservableWindowBoundarySupplier(ObservableSource<T> paramObservableSource, Callable<? extends ObservableSource<B>> paramCallable, int paramInt)
+  {
+    super(paramObservableSource);
+    this.other = paramCallable;
+    this.capacityHint = paramInt;
+  }
+  
+  /* Error */
+  public void subscribeActual(Observer<? super Observable<T>> arg1)
+  {
+    // Byte code:
+    //   0: return
+    //   1: astore_1
+    //   2: goto -2 -> 0
+  }
+  
+  static final class WindowBoundaryInnerObserver<T, B>
+    extends DisposableObserver<B>
+  {
+    boolean done;
+    final ObservableWindowBoundarySupplier.WindowBoundaryMainObserver<T, B> parent;
+    
+    WindowBoundaryInnerObserver(ObservableWindowBoundarySupplier.WindowBoundaryMainObserver<T, B> paramWindowBoundaryMainObserver)
+    {
+      this.parent = paramWindowBoundaryMainObserver;
+    }
+    
+    /* Error */
+    public void onComplete()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    public void onError(Throwable arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    public void onNext(B paramB)
+    {
+      if (this.done) {
+        return;
+      }
+      this.done = true;
+      dispose();
+      this.parent.innerNext(this);
+    }
+  }
+  
+  static final class WindowBoundaryMainObserver<T, B>
+    extends AtomicInteger
+    implements Observer<T>, Disposable, Runnable
+  {
+    static final ObservableWindowBoundarySupplier.WindowBoundaryInnerObserver<Object, Object> BOUNDARY_DISPOSED = new ObservableWindowBoundarySupplier.WindowBoundaryInnerObserver(null);
+    static final Object NEXT_WINDOW = new Object();
+    private static final long serialVersionUID = 2233020065421370272L;
+    final AtomicReference<ObservableWindowBoundarySupplier.WindowBoundaryInnerObserver<T, B>> boundaryObserver;
+    final int capacityHint;
+    volatile boolean done;
+    final Observer<? super Observable<T>> downstream;
+    final AtomicThrowable errors;
+    final Callable<? extends ObservableSource<B>> other;
+    final MpscLinkedQueue<Object> queue;
+    final AtomicBoolean stopWindows;
+    Disposable upstream;
+    UnicastSubject<T> window;
+    final AtomicInteger windows;
+    
+    WindowBoundaryMainObserver(Observer<? super Observable<T>> paramObserver, int paramInt, Callable<? extends ObservableSource<B>> paramCallable)
+    {
+      this.downstream = paramObserver;
+      this.capacityHint = paramInt;
+      this.boundaryObserver = new AtomicReference();
+      this.windows = new AtomicInteger(1);
+      this.queue = new MpscLinkedQueue();
+      this.errors = new AtomicThrowable();
+      this.stopWindows = new AtomicBoolean();
+      this.other = paramCallable;
+    }
+    
+    /* Error */
+    public void dispose()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    void disposeBoundary()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    void drain()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: return
+    }
+    
+    /* Error */
+    void innerComplete()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    void innerError(Throwable arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    void innerNext(ObservableWindowBoundarySupplier.WindowBoundaryInnerObserver<T, B> arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    public boolean isDisposed()
+    {
+      return this.stopWindows.get();
+    }
+    
+    /* Error */
+    public void onComplete()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    public void onError(Throwable arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    public void onNext(T arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    public void onSubscribe(Disposable arg1)
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+    
+    /* Error */
+    public void run()
+    {
+      // Byte code:
+      //   0: return
+      //   1: astore_1
+      //   2: goto -2 -> 0
+    }
+  }
+}
+
+
+/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\io\reactivex\internal\operators\observable\ObservableWindowBoundarySupplier.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

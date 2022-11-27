@@ -1,0 +1,64 @@
+Oct 16 19:47:51 kernel: [    0.000000] CPU features: GIC system register CPU interface present but disabled by higher exception level
+Oct 16 19:47:51 kernel: [    0.068160] psci: failed to boot CPU1 (-22)
+Oct 16 19:47:51 kernel: [    0.068176] CPU1: failed to boot: -22
+Oct 16 19:47:51 kernel: [    0.068186] CPU1: failed in unknown state : 0x0
+Oct 16 19:47:51 kernel: [    0.187089] Registering the rpc profile device successfully with 250
+Oct 16 19:47:51 kernel: [    0.886369] Unable to detect cache hierarchy from DT for CPU 0
+Oct 16 19:47:51 kernel: [    0.911324] Probe amba_heapmem ok
+Oct 16 19:47:51 kernel: [    0.914938] Probe amba_dspmem successfully
+Oct 16 19:47:51 kernel: [    1.158777] ambarella-rtc e8015000.rtc: Warning: RTC lost power.....
+Oct 16 19:47:51 kernel: [    1.165121] ambarella-rtc e8015000.rtc: ambrtc_set_mmss is not supported in dual-OSes!
+Oct 16 19:47:51 kernel: [    1.983537] dji_imc: loading out-of-tree module taints kernel.
+Oct 16 19:47:51 kernel: [    1.994939] IMC_Rpmsg_Init, success
+Oct 16 19:47:51 kernel: [    1.994939] 
+Oct 16 19:47:51 kernel: [    2.006964] rpmsg chn dji_usr probed
+Oct 16 19:47:51 kernel: [    2.006964] 
+Oct 16 19:47:51 kernel: [    2.023753] IMC_Netlink_SockInit: success
+Oct 16 19:47:51 kernel: [    2.023753] 
+Oct 16 19:47:51 kernel: [    2.046811] rpmsg chn dji_drv probed
+Oct 16 19:47:51 kernel: [    2.046811] 
+Oct 16 19:47:54 kernel: [    5.103458] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:47:55 kernel: [    6.158362] =======pregistrypriv->wmm_enable=1============
+Oct 16 19:48:25 kernel: [   36.009588] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:03 kernel: [   74.495083] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:18 kernel: [   88.800335] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:30 kernel: [  101.004208] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:42 kernel: [  113.265959] start_addr=(0x20000), end_addr=(0x40000), buffer_size=(0x20000), smp_number_max=(16384)
+Oct 16 19:49:47 kernel: [  117.773462] ============ STA [70:9c:d1:4f:92:be]  ===================
+Oct 16 19:49:47 kernel: [  117.779949] mac_id : 2
+Oct 16 19:49:47 kernel: [  117.782632] wireless_mode : 0x04
+Oct 16 19:49:47 kernel: [  117.786058] mimo_type : 2
+Oct 16 19:49:47 kernel: [  117.788665] static smps : N
+Oct 16 19:49:47 kernel: [  117.791650] bw_mode : 20MHz, ra_bw_mode : 20MHz
+Oct 16 19:49:47 kernel: [  117.796391] rate_id : 7
+Oct 16 19:49:47 kernel: [  117.799033] rssi : -1 (%), rssi_level : 0
+Oct 16 19:49:47 kernel: [  117.803294] is_support_sgi : N, is_vht_enable : N
+Oct 16 19:49:47 kernel: [  117.808471] disable_ra : N, disable_pt : N
+Oct 16 19:49:47 kernel: [  117.812866] is_noisy : N
+Oct 16 19:49:47 kernel: [  117.815431] txrx_state : 0
+Oct 16 19:49:47 kernel: [  117.818143] curr_tx_rate : CCK_1M (L)
+Oct 16 19:49:47 kernel: [  117.821873] curr_tx_bw : 20MHz
+Oct 16 19:49:47 kernel: [  117.824912] curr_retry_ratio : 0
+Oct 16 19:49:47 kernel: [  117.828163] ra_mask : 0x0000000000000ff0
+Oct 16 19:49:47 kernel: [  117.828163] 
+Oct 16 19:49:47 kernel: [  117.836855] send eapol packet 1/4
+Oct 16 19:49:47 kernel: [  117.842653] recv eapol packet 2/4
+Oct 16 19:49:47 kernel: [  117.846808] send eapol packet 3/4
+Oct 16 19:49:47 kernel: [  117.872298] recv eapol packet 4/4
+Oct 16 19:57:55 kernel: [  606.165859] send eapol packet - WPA Group Key 1/2
+Oct 16 19:57:55 kernel: [  606.172140] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:07:55 kernel: [ 1206.178333] send eapol packet - WPA Group Key 1/2
+Oct 16 20:07:55 kernel: [ 1206.184669] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:17:55 kernel: [ 1806.189839] send eapol packet - WPA Group Key 1/2
+Oct 16 20:17:55 kernel: [ 1806.196139] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:27:55 kernel: [ 2406.202108] send eapol packet - WPA Group Key 1/2
+Oct 16 20:27:55 kernel: [ 2406.208520] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:37:55 kernel: [ 3006.214001] send eapol packet - WPA Group Key 1/2
+Oct 16 20:37:55 kernel: [ 3006.220627] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:47:55 kernel: [ 3606.225954] send eapol packet - WPA Group Key 1/2
+Oct 16 20:47:55 kernel: [ 3606.232264] recv eapol packet - WPA Group Key 2/2
+Oct 16 20:57:55 kernel: [ 4206.238052] send eapol packet - WPA Group Key 1/2
+Oct 16 20:57:55 kernel: [ 4206.243988] recv eapol packet - WPA Group Key 2/2
+Oct 16 21:07:55 kernel: [ 4806.246153] send eapol packet - WPA Group Key 1/2
+Oct 16 21:07:55 kernel: [ 4806.252497] recv eapol packet - WPA Group Key 2/2
+Oct 16 21:15:50 kernel: [ 5281.108134] start_readdir nodev

@@ -1,0 +1,93 @@
+{
+    "log": {
+        "default_level": "error",
+        "default_channel": "console",
+        "default_mask": "enable_all",
+        "default_format": [
+            "basic"
+        ],
+        "default_module": [
+            "unknow",
+            "osal",
+            "mb",
+            "tm",
+            "event",
+            "sketch",
+            "hal",
+            "wl"
+        ]
+    },
+    "blackbox": {
+        "active"            : 0,
+        "base_dir"          : "/blackbox/misc",
+        "prefix"            : "",
+        "demuxed"           : 0,
+        "file_num_limit"    : 100,
+        "file_max_size_m"   : 2,
+        "space_limit_m"     : 16,
+        "cache_size_m"      : 1,
+        "output_port"       : 8919,
+
+        "channels": [
+            {"name": "duss_file_id",    "active": 0, "id": 0, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16, "self_inc_index" : 1},
+            {"name": "duss_osal_info",  "active": 0, "id": 1, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_mb_msg",     "active": 0, "id": 2, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_tm_msg",     "active": 0, "id": 3, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_mb_rti_msg", "active": 0, "id": 4, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "duss_data_info",  "active": 0, "id": 5, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "", "file_num_limit" : 100, "file_max_size_m" : 2, "space_limit_m" : 16,  "self_inc_index" : 1},
+            {"name": "flyctrl",         "active": 1, "id": 6, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "FLY", "file_num_limit" : 100, "file_max_size_m" : 540, "space_limit_m" : 1500,  "self_inc_index" : 0},
+            {"name": "gimbal",          "active": 1, "id": 7, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "GIMBAL", "file_num_limit" : 100, "file_max_size_m" : 350, "space_limit_m" : 700,  "self_inc_index" : 1},
+            {"name": "dji_flight",      "active": 1, "id": 8, "checksum": "no", "high_priority": 0, "sync": 0, "dma": 0, "shm": 0, "prefix": "DFLY", "file_num_limit" : 100, "file_max_size_m" : 16, "space_limit_m" : 64,  "self_inc_index" : 1}
+        ]
+    },
+    "platform": {
+        "name": "common",
+        "dev_info": "HG211 TEST",
+        "hw_str": "UDP AC",
+        "system_init": "sys_platform_common_init",
+        "without_fc": 1,
+        "device_manager": 1
+    },
+    "hal": {
+        "device_list": [
+            {"name": "/dev/ttyGS0",     "attach": "duss_hal_attach_linux_tty",    "detach": "duss_hal_detach_linux_tty"   }
+        ]
+    },
+    "process": {
+        "test_duml": {
+            "log": {
+                "default_level": "info",
+                "default_channel": "console",
+                "default_mask": "enable_all",
+                "default_format": [
+                    "basic"
+                ]
+            },
+            "blackbox": {
+                "active"            : 0,
+                "base_dir"          : "/blackbox/test_upgrade",
+                "prefix"            : "",
+                "demuxed"           : 0,
+                "file_num_limit"    : 100,
+                "file_max_size_m"   : 2,
+                "space_limit_m"     : 16,
+                "cache_size_m"      : 1,
+                "output_port"       : 8923
+            }
+        }
+    },
+    "test_duml": {
+        "mb_route_table": {
+            "host_1": {
+                "host": "ve_air", "index": 1,
+                "82": {"status": 1, "target": "ve_air", "index": 2, "channel": "local", "distance": 0, "protocol": "logic",
+                        "local": {"direct_host": "ve_air", "index": 2}}
+            },
+            "host_2": {
+                "host": "ve_air", "index": 2,
+                "81": {"status": 1, "target": "ve_air", "index": 1, "channel": "local", "distance": 0, "protocol": "logic",
+                        "local": {"direct_host": "ve_air", "index": 1}}
+            }
+        }
+    }
+}

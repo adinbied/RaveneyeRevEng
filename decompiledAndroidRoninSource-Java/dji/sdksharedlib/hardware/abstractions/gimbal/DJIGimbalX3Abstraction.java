@@ -1,0 +1,25 @@
+package dji.sdksharedlib.hardware.abstractions.gimbal;
+
+public class DJIGimbalX3Abstraction
+  extends DJIGimbalAircraftAbstraction
+{
+  /* Error */
+  public void initGimbalCapability()
+  {
+    // Byte code:
+    //   0: return
+    //   1: astore_1
+    //   2: goto -2 -> 0
+  }
+  
+  protected void initializeComponentCharacteristics()
+  {
+    super.initializeComponentCharacteristics();
+  }
+}
+
+
+/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x87b1d00c-dex2jar.jar!\dji\sdksharedlib\hardware\abstractions\gimbal\DJIGimbalX3Abstraction.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

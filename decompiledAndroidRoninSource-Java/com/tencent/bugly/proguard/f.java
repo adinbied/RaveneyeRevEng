@@ -1,0 +1,125 @@
+package com.tencent.bugly.proguard;
+
+import java.io.PrintStream;
+import java.util.HashMap;
+import java.util.Map;
+
+public final class f
+  extends k
+{
+  private static byte[] k = null;
+  private static Map<String, String> l = null;
+  public short a = 0;
+  public int b = 0;
+  public String c = null;
+  public String d = null;
+  public byte[] e;
+  private byte f = 0;
+  private int g = 0;
+  private int h = 0;
+  private Map<String, String> i;
+  private Map<String, String> j;
+  
+  public final void a(i parami)
+  {
+    try
+    {
+      this.a = parami.a(this.a, 1, true);
+      this.f = parami.a(this.f, 2, true);
+      this.g = parami.a(this.g, 3, true);
+      this.b = parami.a(this.b, 4, true);
+      this.c = parami.b(5, true);
+      this.d = parami.b(6, true);
+      if (k == null) {
+        k = new byte[] { 0 };
+      }
+      this.e = ((byte[])parami.c(7, true));
+      this.h = parami.a(this.h, 8, true);
+      localObject = l;
+      if (localObject == null)
+      {
+        localObject = new HashMap();
+        l = (Map)localObject;
+        ((Map)localObject).put("", "");
+      }
+      this.i = ((Map)parami.a(l, 9, true));
+      if (l == null)
+      {
+        localObject = new HashMap();
+        l = (Map)localObject;
+        ((Map)localObject).put("", "");
+      }
+      this.j = ((Map)parami.a(l, 10, true));
+      return;
+    }
+    catch (Exception parami)
+    {
+      parami.printStackTrace();
+      Object localObject = System.out;
+      StringBuilder localStringBuilder = new StringBuilder("RequestPacket decode error ");
+      localStringBuilder.append(e.a(this.e));
+      ((PrintStream)localObject).println(localStringBuilder.toString());
+      throw new RuntimeException(parami);
+    }
+  }
+  
+  public final void a(j paramj)
+  {
+    paramj.a(this.a, 1);
+    paramj.a(this.f, 2);
+    paramj.a(this.g, 3);
+    paramj.a(this.b, 4);
+    paramj.a(this.c, 5);
+    paramj.a(this.d, 6);
+    paramj.a(this.e, 7);
+    paramj.a(this.h, 8);
+    paramj.a(this.i, 9);
+    paramj.a(this.j, 10);
+  }
+  
+  public final void a(StringBuilder paramStringBuilder, int paramInt)
+  {
+    paramStringBuilder = new h(paramStringBuilder, paramInt);
+    paramStringBuilder.a(this.a, "iVersion");
+    paramStringBuilder.a(this.f, "cPacketType");
+    paramStringBuilder.a(this.g, "iMessageType");
+    paramStringBuilder.a(this.b, "iRequestId");
+    paramStringBuilder.a(this.c, "sServantName");
+    paramStringBuilder.a(this.d, "sFuncName");
+    paramStringBuilder.a(this.e, "sBuffer");
+    paramStringBuilder.a(this.h, "iTimeout");
+    paramStringBuilder.a(this.i, "context");
+    paramStringBuilder.a(this.j, "status");
+  }
+  
+  public final Object clone()
+  {
+    try
+    {
+      Object localObject = super.clone();
+      return localObject;
+    }
+    catch (CloneNotSupportedException localCloneNotSupportedException)
+    {
+      for (;;) {}
+    }
+    if (m) {
+      return null;
+    }
+    throw new AssertionError();
+  }
+  
+  public final boolean equals(Object paramObject)
+  {
+    paramObject = (f)paramObject;
+    int n = ((f)paramObject).a;
+    Integer localInteger = Integer.valueOf(1);
+    return (l.a(1, n)) && (l.a(1, ((f)paramObject).f)) && (l.a(1, ((f)paramObject).g)) && (l.a(1, ((f)paramObject).b)) && (l.a(localInteger, ((f)paramObject).c)) && (l.a(localInteger, ((f)paramObject).d)) && (l.a(localInteger, ((f)paramObject).e)) && (l.a(1, ((f)paramObject).h)) && (l.a(localInteger, ((f)paramObject).i)) && (l.a(localInteger, ((f)paramObject).j));
+  }
+}
+
+
+/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\tencent\bugly\proguard\f.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

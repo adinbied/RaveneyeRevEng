@@ -1,0 +1,21 @@
+Oct 16 19:47:51 syslogd started: BusyBox v1.25.0
+Oct 16 19:47:51 dnsmasq[230]: started, version 2.76 DNS disabled
+Oct 16 19:47:51 dnsmasq[230]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP DHCPv6 no-Lua no-TFTP no-conntrack ipset auth no-DNSSEC loop-detect inotify
+Oct 16 19:47:51 dnsmasq-dhcp[230]: DHCP, IP range 192.168.2.2 -- 192.168.2.200, lease time infinite
+Oct 16 19:47:53 : starting pid 540, tty '': '-/bin/sh'
+Oct 16 19:49:47 hostapd: wlan0: STA 70:9c:d1:4f:92:be IEEE 802.11: associated
+Oct 16 19:49:47 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: pairwise key handshake completed (RSN)
+Oct 16 19:49:51 dnsmasq-dhcp[230]: DHCPDISCOVER(wlan0) 70:9c:d1:4f:92:be 
+Oct 16 19:49:51 dnsmasq-dhcp[230]: DHCPOFFER(wlan0) 192.168.2.164 70:9c:d1:4f:92:be 
+Oct 16 19:49:51 dnsmasq-dhcp[230]: DHCPREQUEST(wlan0) 192.168.2.164 70:9c:d1:4f:92:be 
+Oct 16 19:49:51 dnsmasq-dhcp[230]: DHCPACK(wlan0) 192.168.2.164 70:9c:d1:4f:92:be DESKTOP-OEAV45S
+Oct 16 19:57:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:07:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:17:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:27:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:37:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:47:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 20:54:46 login[3711]: root login on 'pts/0'
+Oct 16 20:57:45 login[22840]: root login on 'pts/0'
+Oct 16 20:57:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)
+Oct 16 21:07:55 hostapd: wlan0: STA 70:9c:d1:4f:92:be WPA: group key handshake completed (RSN)

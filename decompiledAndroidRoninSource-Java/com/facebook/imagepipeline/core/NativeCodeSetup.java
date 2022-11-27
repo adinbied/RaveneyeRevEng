@@ -1,0 +1,22 @@
+package com.facebook.imagepipeline.core;
+
+public class NativeCodeSetup
+{
+  private static boolean sUseNativeCode = true;
+  
+  public static boolean getUseNativeCode()
+  {
+    return sUseNativeCode;
+  }
+  
+  public static void setUseNativeCode(boolean paramBoolean)
+  {
+    sUseNativeCode = paramBoolean;
+  }
+}
+
+
+/* Location:              C:\Users\adinb\Downloads\dex2jar-2.0\dex2jar-2.0\0x89a2c000-dex2jar.jar!\com\facebook\imagepipeline\core\NativeCodeSetup.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
